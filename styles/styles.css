@@ -9,10 +9,12 @@ nav li {
 
 main li {
   background-color: #ff5d1c;
-  color: #fff
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-  text-decoration: none;
-  padding: 0px;
+}
+
+main li {
+    color: #fff
+    text-decoration: none;
+    padding: 0px;
 }
 
 
