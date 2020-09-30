@@ -28,3 +28,7 @@ nav a {
 nav a:hover {
   color: #ffa987;
 }
+
+nav ul {
+  padding: 0px;
+}
