@@ -2,3 +2,7 @@ body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #373837;
 }
+
+nav li {
+  display: inline-block;
+}
