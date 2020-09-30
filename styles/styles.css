@@ -20,7 +20,7 @@ h3 {
 }
 
 nav a {
-  color: #ff5d1c;
+  color: #373837;
   text-decoration: none;
   padding: 10px;
 }
@@ -31,4 +31,8 @@ nav a:hover {
 
 nav ul {
   padding: 0px;
+}
+
+.active {
+  color: #ff5d1c;
 }
