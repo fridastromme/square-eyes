@@ -7,8 +7,10 @@ nav li {
   display: inline-block;
 }
 
-li {
+main li {
   background-color: #ff5d1c;
+  text-decoration: none;
+  padding: 0px;
 }
 
 h1 {
