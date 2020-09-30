@@ -7,6 +7,10 @@ nav li {
   display: inline-block;
 }
 
+li {
+  background-color: #ff5d1c;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 40px;
