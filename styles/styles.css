@@ -18,3 +18,9 @@ h2 {
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+nav a {
+  color: #ff5d1c;
+  text-decoration: none;
+  padding: 10px;
+}
