@@ -1,9 +1,9 @@
 .header {
+  text-align: right;
   display: flex;
   width: 100vw;
   padding: 20px;
   margin: 10;
-  text-align: right;
   background: #ffffff;
   color: white;
   font-size: 23px;
