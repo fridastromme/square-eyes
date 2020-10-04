@@ -3,16 +3,16 @@
   width: 100vw;
   padding: 20px;
   margin: 10;
+  text-align: right;
   background: #ffffff;
   color: white;
-  text-align: right;
   font-size: 23px;
   font-weight: bold;
   filter: drop-shadow(10px 4px 4px #373737);
 }
 
 #logo {
-  align-content: flex-start;
+  text-align: left;
 }
 
 body {
