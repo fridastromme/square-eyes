@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  position: relative;
   padding: 60px;
   text-align: right;
   background: #ffffff;
