@@ -15,8 +15,8 @@ body {
 }
 
 nav li {
-  display: inline-block;
   text-align: right;
+  display: inline-block;
 }
 
 h1 {
