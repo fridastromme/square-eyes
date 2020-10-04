@@ -64,6 +64,10 @@ nav ul {
   background-color: #373837;
 }
 
+#movies .overlay {
+  color: #ffffff;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
