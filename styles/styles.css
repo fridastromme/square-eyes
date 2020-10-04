@@ -11,6 +11,10 @@
   filter: drop-shadow(10px 4px 4px #373737);
 }
 
+#logo {
+  align-content: flex-start;
+}
+
 body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #373837;
