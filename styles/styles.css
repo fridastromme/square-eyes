@@ -1,10 +1,11 @@
 .header {
+  width: 100%;
   padding: 60px;
   text-align: right;
   background: #ffffff;
   color: white;
   font-size: 30px;
-  filter: drop-shadow(30px 10px 4px #373737);
+  filter: drop-shadow(10px 4px 4px #373737);
 }
 
 body {
