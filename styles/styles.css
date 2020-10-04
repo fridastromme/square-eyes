@@ -1,3 +1,7 @@
+#id {
+  text-align: left;
+}
+
 .header {
   width: device-widt;
   padding: 20px;
@@ -8,10 +12,6 @@
   font-size: 23px;
   font-weight: bold;
   filter: drop-shadow(10px 4px 4px #373737);
-}
-
-#logo {
-  text-align: left;
 }
 
 body {
