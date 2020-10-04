@@ -1,8 +1,7 @@
 .header {
-  text-align: right;
-  display: flex;
   width: 100vw;
   padding: 20px;
+  text-align: right;
   margin: 10;
   background: #ffffff;
   color: white;
