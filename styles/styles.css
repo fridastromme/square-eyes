@@ -16,6 +16,11 @@ body {
   color: #373837;
 }
 
+.featured {
+  width: 100%;
+  padding: 0px;
+}
+
 nav li {
   display: inline-block;
 }
