@@ -60,6 +60,11 @@ nav ul {
   color: #ffa987;
 }
 
+#movies {
+  background-color: #373837;
+  color: #ffffff;
+}
+
 .overlaymovie {
   text-decoration: none;
   color: #ffffff;
@@ -67,11 +72,6 @@ nav ul {
 
 .overlaymovie:hover {
   color: #ffa987;
-}
-
-#movies {
-  background-color: #373837;
-  color: #ffffff;
 }
 
 .footer {
