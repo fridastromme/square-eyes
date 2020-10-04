@@ -40,8 +40,8 @@ nav ul {
 }
 
 .overlay {
-  color: #373837
   text-decoration: none;
+  color: #373837;
 }
 
 .overlay:hover {
