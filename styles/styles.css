@@ -2,7 +2,7 @@
   width: 100%;
   padding: 20px;
   text-align: right;
-  margin: 20;
+  margin: 20px;
   background: #ffffff;
   color: white;
   font-size: 23px;
@@ -18,7 +18,8 @@ body {
 
 .featured {
   width: 100%;
-  padding: 0px !important;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav li {
