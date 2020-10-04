@@ -3,7 +3,6 @@
   width: 100vw;
   padding: 0px;
   margin: 0;
-  text-align: right;
   background: #ffffff;
   color: white;
   font-size: 30px;
@@ -17,6 +16,7 @@ body {
 
 nav li {
   display: inline-block;
+  text-align: right;
 }
 
 h1 {
