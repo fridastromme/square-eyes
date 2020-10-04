@@ -47,3 +47,7 @@ nav ul {
 .overlay:hover {
   color: #ffa987;
 }
+
+#movies {
+  background-color: #373837;
+}
