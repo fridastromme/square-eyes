@@ -1,8 +1,8 @@
 .header {
   display: flex;
   width: 100vw;
-  padding: 0px;
-  margin: 0;
+  padding: 20px;
+  margin: 10;
   background: #ffffff;
   color: white;
   font-size: 30px;
@@ -15,7 +15,6 @@ body {
 }
 
 nav li {
-  text-align: right;
   display: inline-block;
 }
 
