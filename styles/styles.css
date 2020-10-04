@@ -42,3 +42,7 @@ nav ul {
 .overlay {
   text-decoration: none;
 }
+
+.overlay:hover {
+  color: #ffa987;
+}
