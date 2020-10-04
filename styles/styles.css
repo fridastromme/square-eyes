@@ -37,6 +37,10 @@ body {
   color: #373837;
 }
 
+li {
+  display: inline-block;
+}
+
 nav li {
   display: inline-block;
 }
