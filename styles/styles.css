@@ -65,6 +65,15 @@ nav ul {
   color: #ffffff;
 }
 
+.overlaymovies {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.overlaymovies:hover {
+  color: #ffa987;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
