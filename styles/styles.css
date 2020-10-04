@@ -10,6 +10,28 @@
   filter: drop-shadow(10px 4px 4px #373737);
 }
 
+.buttonred {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7aa8b7;
+  border-radius: 6px;
+  outline: none;
+}
+
+.buttonblue {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7aa8b7;
+  border-radius: 6px;
+  outline: none;
+}
+
 body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #373837;
