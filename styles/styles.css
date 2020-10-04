@@ -60,18 +60,17 @@ nav ul {
   color: #ffa987;
 }
 
-#movies {
-  background-color: #373837;
-  color: #ffffff;
-}
-
-.overlaymovies {
+.overlaymovie {
   text-decoration: none;
   color: #ffffff;
 }
 
-.overlaymovies:hover {
+.overlaymovie:hover {
   color: #ffa987;
+}
+
+#movies {
+  background-color: #373837;
 }
 
 .footer {
