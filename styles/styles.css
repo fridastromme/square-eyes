@@ -38,3 +38,7 @@ nav ul {
 .active {
   color: #ff5d1c;
 }
+
+.overlay {
+  text-decoration: none;
+}
