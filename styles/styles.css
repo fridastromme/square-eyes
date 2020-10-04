@@ -93,6 +93,15 @@ nav ul {
   color: #ffffff;
 }
 
+#createprod {
+  background: rgb(49, 65, 212);
+  background: linear-gradient(
+    0deg,
+    rgba(49, 65, 212, 1) 0%,
+    rgba(123, 133, 118, 1) 100%
+  );
+}
+
 .footer {
   width: 100%;
   padding: 30px;
