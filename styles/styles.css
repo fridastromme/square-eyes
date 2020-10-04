@@ -107,6 +107,10 @@ nav ul {
   background-image: linear-gradient(#7b8576, #3141d4);
 }
 
+.white-box {
+  background-color: white;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
