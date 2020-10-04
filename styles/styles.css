@@ -70,6 +70,7 @@ nav ul {
   text-align: center;
   background: #ffffff;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: regular;
   filter: drop-shadow(10px 4px 4px #373737);
 }
