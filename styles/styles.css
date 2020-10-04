@@ -1,3 +1,11 @@
+.header {
+  padding: 60px;
+  text-align: right;
+  background: #ffffff;
+  color: white;
+  font-size: 30px;
+}
+
 body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #373837;
