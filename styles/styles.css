@@ -127,7 +127,7 @@ nav ul {
 }
 
 .pres {
-  background-image: url(images/movie-clapper.jpg);
+  background-image: url("../images/movie-clapper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
