@@ -256,7 +256,6 @@ nav ul {
   font-size: 11px;
   align-content: center;
   padding-left: 20px;
-  border-radius: 20px;
 }
 
 h1,
@@ -285,6 +284,10 @@ h3,
   padding: 20px;
   box-shadow: 0px 3px 10px #0000004b;
   align-content: center;
+}
+
+.rounded {
+  border-radius: 5px;
 }
 
 /* Presenting Square Eyes at the bottom */
