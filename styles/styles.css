@@ -150,8 +150,7 @@ nav ul {
 }
 
 .featured-image {
-  width: 1vw;
-  appearance: no-repeat;
+  min-width: 1vw;
 }
 
 /* Containers */
