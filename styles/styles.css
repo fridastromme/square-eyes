@@ -143,6 +143,11 @@ nav ul {
   font-size: 80px;
 }
 
+#paragraph {
+  font-size: 26px;
+  font-weight: normal;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
