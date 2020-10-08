@@ -286,7 +286,7 @@ h3,
 }
 
 .centered {
-  align-content: center;
+  margin: auto;
 }
 
 /* Presenting Square Eyes at the bottom */
