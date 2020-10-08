@@ -134,6 +134,7 @@ nav ul {
 
 .featured {
   background-color: white;
+  max-width: 100%;
 }
 
 .newtit {
