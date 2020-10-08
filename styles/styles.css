@@ -139,6 +139,10 @@ nav ul {
   color: white;
 }
 
+#header {
+  font-size: 95px;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
