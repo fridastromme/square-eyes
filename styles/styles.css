@@ -30,6 +30,7 @@ body {
 .buttonred {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: 0px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -115,6 +116,15 @@ nav ul {
 
 .overlay:hover {
   color: #ffa987;
+}
+
+.featured {
+}
+
+.newtit {
+}
+
+.pres {
 }
 
 .footer {
