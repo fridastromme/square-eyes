@@ -172,6 +172,16 @@ h1,
   left: 16px;
 }
 
+h2,
+.title {
+  color: white;
+}
+
+h2,
+.creator {
+  color: white;
+}
+
 .creator {
   position: absolute;
   bottom: 8px;
