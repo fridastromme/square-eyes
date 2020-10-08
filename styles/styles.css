@@ -152,13 +152,13 @@ nav ul {
 .film {
   display: inline-block;
   outline: solid black;
+  align-content: center;
 }
 
 .newtit {
   background-color: white;
   margin-top: 0px;
   padding: 20px;
-  box-align: center;
   box-shadow: 0px 3px 10px #0000004b;
 }
 
