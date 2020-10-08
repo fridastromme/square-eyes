@@ -152,7 +152,7 @@ nav ul {
 .film {
   display: inline-block;
   outline: solid black;
-  text-align: center;
+  align-items: center;
 }
 
 .newtit {
