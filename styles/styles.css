@@ -91,7 +91,6 @@ li {
 
 nav li {
   display: inline-block;
-  font-size: 16px;
   padding-right: 50px;
 }
 
@@ -110,7 +109,7 @@ h3 {
 }
 
 nav a {
-  font-size: 17px;
+  font-size: 14px;
   color: #373837;
   text-decoration: none;
   padding: 5px;
