@@ -127,6 +127,9 @@ nav ul {
 }
 
 .pres {
+  background-image: (i "mages/movie-clapper,jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer {
