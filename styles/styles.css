@@ -105,6 +105,7 @@ nav a {
   color: #373837;
   text-decoration: none;
   padding: 10px;
+  margin-right: 200px;
 }
 
 nav a:hover {
