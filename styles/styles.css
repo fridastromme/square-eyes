@@ -161,6 +161,11 @@ h1,
   font-size: 20px;
 }
 
+h2,
+.film {
+  font-size: 11px;
+}
+
 .newtit {
   background-color: white;
   margin-top: 0px;
