@@ -345,23 +345,3 @@ h3,
 }
 
 /* Footer */
-
-.white-box {
-  background-color: white;
-  padding: 40px;
-  text-align: center;
-  filter: drop-shadow(10px 4px 4px #373737);
-  margin: 0px;
-}
-
-.footer {
-  max-width: 100%;
-  padding: 30px;
-  text-align: center;
-  margin: 0px;
-  background: #ffffff;
-  color: white;
-  font-size: 16px;
-  font-weight: lighter;
-  filter: drop-shadow(10px 4px 4px #373737);
-}
