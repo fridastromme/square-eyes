@@ -151,6 +151,7 @@ nav ul {
 
 .film {
   display: inline-block;
+  stroke: solid black;
 }
 
 .newtit {
