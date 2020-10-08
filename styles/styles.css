@@ -221,6 +221,34 @@ nav ul {
   color: white;
 }
 
+.title-s {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.creator-s {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#title-s {
+  font-size: 18px;
+  color: white;
+}
+
+#creator-s {
+  font-size: 18px;
+  color: white;
+}
+
 /* film boxes */
 
 .film {
