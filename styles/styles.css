@@ -320,6 +320,7 @@ h3,
   line-height: 23px;
   margin-top: 0px;
   margin-bottom: 20px;
+  outline: solid black;
 }
 
 .narrow-col {
