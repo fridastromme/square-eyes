@@ -154,6 +154,10 @@ nav ul {
   margin-top: 0px;
 }
 
+.narrow-col {
+  width: 220px;
+}
+
 .footer {
   width: 100%;
   padding: 30px;
