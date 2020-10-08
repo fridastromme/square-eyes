@@ -193,6 +193,10 @@ nav ul {
   color: white;
 }
 
+#featured:hover {
+  color: #ffa987;
+}
+
 #title {
   font-size: 70px;
   color: white;
