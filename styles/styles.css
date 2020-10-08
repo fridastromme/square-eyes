@@ -149,6 +149,10 @@ nav ul {
   display: inline-block;
 }
 
+.featured-image {
+  width: 1vw;
+}
+
 /* Containers */
 
 .container {
