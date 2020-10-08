@@ -189,6 +189,16 @@ nav ul {
   color: white;
 }
 
+#title {
+  font-size: 100px;
+  color: white;
+}
+
+#creator {
+  font-size: 18px;
+  color: white;
+}
+
 /* film boxes */
 
 .film {
