@@ -9,7 +9,7 @@
   color: white;
   font-size: 23px;
   font-weight: bold;
-  filter: drop-shadow(3px 4px 4px #373737);
+  filter: drop-shadow(4px 3px 10px #373737);
 }
 
 html {
