@@ -127,8 +127,8 @@ nav ul {
 }
 
 .pres {
-  background-image: url("../images/movie-clapper.jpg");
-  background-repeat: no-repeat;
+  background: transparent url("../images/movie-clapper.jpg") 0% 0% no-repeat
+    padding-box;
   max-width: 100%;
   height: 600px;
   padding-top: 102px;
