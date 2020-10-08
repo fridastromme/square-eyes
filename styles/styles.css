@@ -190,12 +190,18 @@ nav ul {
 
 #featured {
   font-size: 24px;
-  padding: 5px;
-  margin: 0;
   color: white;
 }
 
 #featured:hover {
+  color: #ffa987;
+}
+
+#title:hover {
+  color: #ffa987;
+}
+
+#creator:hover {
   color: #ffa987;
 }
 
