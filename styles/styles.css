@@ -31,6 +31,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 0px;
+  font: normal 17px Gill Sans;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -62,6 +63,7 @@ body {
 .buttonblue2 {
   display: inline-block;
   padding: 10px 20px;
+  font: normal 17px Gill Sans;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -86,7 +88,7 @@ nav li {
 
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
 }
 
