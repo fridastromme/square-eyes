@@ -154,7 +154,6 @@ nav ul {
   outline: solid black;
   font-size: 11px;
   display: flex;
-  flex-wrap: wrap;
   align-content: center;
 }
 
