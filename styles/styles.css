@@ -43,6 +43,7 @@ body {
 .buttonblue {
   display: inline-block;
   padding: 10px 20px;
+  font: normal normal bold 20px/23px Gill Sans;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
