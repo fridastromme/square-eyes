@@ -45,6 +45,7 @@ body {
   height: 27px;
   display: inline-block;
   padding: 15px 20px;
+  margin-bottom: 0px;
   font: normal normal bold 20px/23px Gill Sans;
   text-align: center;
   text-decoration: none;
