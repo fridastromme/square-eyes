@@ -1,3 +1,5 @@
+/*Global styles*/
+
 .header {
   width: 100%;
   padding: 30px;
@@ -18,6 +20,11 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.logo {
+  width: 150px;
+  float: left;
 }
 
 .buttonred {
@@ -110,10 +117,26 @@ nav ul {
   color: #ffa987;
 }
 
+.footer {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  margin: 0px;
+  background: #ffffff;
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  filter: drop-shadow(10px 4px 4px #373737);
+}
+
+/* movie page */
+
 #movies {
   background-color: #373837;
   color: #ffffff;
 }
+
+/* Create account */
 
 #createprod {
   background-image: linear-gradient(#7b8576, #3141d4);
@@ -127,17 +150,5 @@ nav ul {
   background-color: white;
   padding: 40px;
   text-align: center;
-  filter: drop-shadow(10px 4px 4px #373737);
-}
-
-.footer {
-  width: 100%;
-  padding: 30px;
-  text-align: center;
-  margin: 0px;
-  background: #ffffff;
-  color: white;
-  font-size: 16px;
-  font-weight: lighter;
   filter: drop-shadow(10px 4px 4px #373737);
 }
