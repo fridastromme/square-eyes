@@ -141,11 +141,13 @@ nav ul {
 
 #header {
   font-size: 80px;
+  margin-bottom: 0px;
 }
 
 #paragraph {
   font-size: 26px;
   font-weight: normal;
+  margin-top: 0px;
 }
 
 .footer {
