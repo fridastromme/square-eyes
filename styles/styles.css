@@ -91,6 +91,7 @@ li {
 
 nav li {
   display: inline-block;
+  padding-right: 50px;
 }
 
 h1 {
