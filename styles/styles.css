@@ -128,8 +128,9 @@ nav ul {
 
 .pres {
   background-image: url("../images/movie-clapper.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
+  width: 1920px;
+  height: 696px;
 }
 
 .footer {
