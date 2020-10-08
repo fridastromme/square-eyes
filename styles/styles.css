@@ -149,6 +149,10 @@ nav ul {
   display: inline-block;
 }
 
+.film {
+  display: inline-block;
+}
+
 .newtit {
   background-color: white;
 }
