@@ -151,6 +151,7 @@ nav ul {
 
 .featured-image {
   width: 1vw;
+  appearance: no-repeat;
 }
 
 /* Containers */
