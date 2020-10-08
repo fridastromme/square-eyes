@@ -1,7 +1,7 @@
 /*Global styles*/
 
 .content-wrap {
-  width: 100%;
+  max-width: 950px;
   margin: 0 auto;
   padding: 30px;
   text-align: right;
