@@ -157,21 +157,23 @@ nav ul {
 
 .feat {
   position: absolute;
-  color: white;
   bottom: 8px;
   left: 16px;
 }
 
+h1,
+.feat {
+  color: white;
+}
+
 .title {
   position: absolute;
-  color: white;
   top: 8px;
   left: 16px;
 }
 
 .creator {
   position: absolute;
-  color: white;
   bottom: 8px;
   right: 16px;
 }
