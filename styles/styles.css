@@ -85,7 +85,6 @@ li {
 
 nav li {
   display: inline-block;
-  margin-top: 0px;
 }
 
 h1 {
@@ -119,6 +118,7 @@ nav a:hover {
 
 nav ul {
   padding: 0px;
+  margin-top: 0px;
 }
 
 .active {
