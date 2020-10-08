@@ -105,7 +105,10 @@ nav a {
   color: #373837;
   text-decoration: none;
   padding: 10px;
-  margin-right: 200px;
+}
+
+.headmen {
+  margin-right: 20px;
 }
 
 nav a:hover {
