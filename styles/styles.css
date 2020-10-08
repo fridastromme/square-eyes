@@ -159,12 +159,11 @@ nav ul {
 
 .feat {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 20px;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 18px;
 }
 
 .title {
