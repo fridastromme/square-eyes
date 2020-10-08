@@ -156,7 +156,8 @@ nav ul {
   align-content: center;
 }
 
-h1 ~ .film {
+h1,
+.film {
   font-size: 20px;
 }
 
