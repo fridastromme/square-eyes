@@ -215,6 +215,12 @@ nav ul {
   color: #ffa987;
 }
 
+.container-s {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
 /* film boxes */
 
 .film {
