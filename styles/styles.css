@@ -25,7 +25,6 @@ body {
 
 .logo {
   width: 150px;
-  margin-top: 0px;
   float: left;
 }
 
@@ -86,6 +85,7 @@ li {
 
 nav li {
   display: inline-block;
+  margin-top: 0px;
 }
 
 h1 {
