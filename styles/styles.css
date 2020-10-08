@@ -153,13 +153,12 @@ nav ul {
 
 .container {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
 .feat {
   position: absolute;
-  text-align: left;
   bottom: 20px;
   right: 20px;
   color: white;
@@ -169,7 +168,6 @@ nav ul {
 
 .title {
   position: absolute;
-  text-align: left;
   bottom: 20px;
   right: 20px;
   color: white;
@@ -179,7 +177,6 @@ nav ul {
 
 .creator {
   position: absolute;
-  text-align: left;
   bottom: 20px;
   right: 20px;
   color: white;
