@@ -153,7 +153,6 @@ nav ul {
   display: inline-block;
   outline: solid black;
   font-size: 11px;
-  display: flex;
   align-content: center;
 }
 
