@@ -159,7 +159,7 @@ nav ul {
 
 .feat {
   position: absolute;
-  bottom: 140px;
+  bottom: 200px;
   left: 20px;
   color: white;
   padding-left: 20px;
@@ -168,7 +168,7 @@ nav ul {
 
 .title {
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   left: 20px;
   color: white;
   padding-left: 20px;
@@ -177,7 +177,7 @@ nav ul {
 
 .creator {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 20px;
   color: white;
   padding-left: 20px;
