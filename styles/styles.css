@@ -149,6 +149,8 @@ nav ul {
   display: inline-block;
 }
 
+/* Containers */
+
 .container {
   position: relative;
   text-align: center;
@@ -157,13 +159,8 @@ nav ul {
 
 .feat {
   position: absolute;
-  bottom: 8px;
+  padding-bottom: 50px;
   left: 16px;
-}
-
-h1,
-.feat {
-  color: white;
 }
 
 .title {
@@ -172,21 +169,13 @@ h1,
   left: 16px;
 }
 
-h2,
-.title {
-  color: white;
-}
-
-h2,
-.creator {
-  color: white;
-}
-
 .creator {
   position: absolute;
   bottom: 8px;
   right: 16px;
 }
+
+/* film boxes */
 
 .film {
   display: inline-block;
@@ -212,12 +201,16 @@ h3,
   margin-top: 2px;
 }
 
+/* New titles section */
+
 .newtit {
   background-color: white;
   margin-top: 0px;
   padding: 20px;
   box-shadow: 0px 3px 10px #0000004b;
 }
+
+/* Presenting Square Eyes at the bottom */
 
 .pres {
   background: transparent url("../images/movie-clapper.jpg") 0% 0% no-repeat
@@ -228,6 +221,8 @@ h3,
   padding-left: 700px;
   margin-bottom: 0px;
 }
+
+/* White text in presentation section */
 
 .white {
   color: white;
@@ -252,6 +247,7 @@ h3,
   width: 330px;
 }
 
+/* bottom footer */
 .footer {
   max-width: 100%;
   padding: 30px;
