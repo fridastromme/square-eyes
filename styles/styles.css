@@ -156,6 +156,10 @@ nav ul {
   align-content: center;
 }
 
+.film h1 {
+  font-size: 20px;
+}
+
 .newtit {
   background-color: white;
   margin-top: 0px;
