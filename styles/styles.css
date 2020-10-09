@@ -325,6 +325,7 @@ h3,
 
 .narrow-col {
   width: 330px;
+  outline: solid black;
 }
 
 /* movie page */
@@ -364,5 +365,9 @@ h3,
   color: white;
   font-size: 16px;
   font-weight: lighter;
-  filter: drop-shadow(10px 4px 4px #373737);
+}
+
+#footer-link {
+  display: inline-block;
+  outline: black solid;
 }
