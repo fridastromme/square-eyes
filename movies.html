@@ -11,58 +11,84 @@
   </head>
   <body id="movies"></body>
   <header>
-    <div class="header">
+    <div class="content-wrap">
       <a href="index.html"
-        ><img src="images/squareeyes_logo.png" alt="Website logo"
+        ><img
+          src="images/squareeyes_logo.png"
+          class="logo"
+          alt="Website logo"
       /></a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html" class="active">Movies</a></li>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="sign-in.html">Sign in</a></li>
-          <li><a class="buttonred" href="sign-up.html">Sign up</a></li>
+          <div class="headmen">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html"class="active">Movies</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="sign-in.html">Sign in</a></li>
+            <li><a class="buttonred" href="sign-up.html">Sign up</a></li>
+          </div>
         </ul>
       </nav>
     </div>
   </header>
     <main>
       <section>
-        <a href="movies.html"
-          ><img
-            src="images/of-the-forest-1.jpg"
-            alt="Woman and child smiling while sitting in a lake."
-        /></a>
-        <h1>Featured:</h1>
-        <h2>Of The Forest</h2>
-        <h3>By Lucy Thompson</h3>
-        <h1>New titles:</h1>
-        <a href="movies.html"
-          ><img
-            src="images/kicking-the-fog-1.jpg"
-            alt="Woman crying behind a window on a train."
-        /></a>
-        <h2>Kicking The Fog</h2>
-        <h3>By Alexander Tolstoj</h3>
-        <a href="movies.html"
-          ><img src="images/preys-1.jpg" alt="Man falling in mid air."
-        /></a>
-        <h2>Preys</h2>
-        <h3>By Sara Salomonsson</h3>
-        <a href="movies.html"
-          ><img
-            src="images/hunters-from-outer-space-1.jpg"
-            alt="Woman sitting and looking into the camera. There is a large futuristic city in the background."
-        /></a>
-        <h2>Hunters From Outer Space</h2>
-        <h3>By Eric Armstrong</h3>
-        <a href="movies.html"
-          ><img
-            src="images/fire-job-1.jpg"
-            alt="Woman laughing while sitting in a sofa, looking out of view."
-        /></a>
-        <h2>Fire Job</h2>
-        <h3>By Susan Kim</h3>
+        <div class="featured">
+          <div class="container-movie">
+            <!-- <a href="movies.html"
+              ><img
+                src="images/of-the-forest-1.jpg" class= "featured-image"
+                alt="Woman and child smiling while sitting in a lake."
+            /></a> -->
+          <div class="feat-movie"><h1><a href="movies.html" class="overlay" id="featured">Featured:</a></h1></div>
+          <div class="title-movie"><h2><a href="movies.html" class="overlay" id="title">Of The Forest</a></h2></div>
+          <div class="creator-movie"><h3><a href="movies.html" class="overlay" id="creator">By Lucy Thompson</a></h3></div>
+        </div>
+        <section class="news">
+          <div class="newtit-movies">
+            <h1 id="news">New titles:</h1>
+            <div class="film-movies">
+              <a href="movies.html"
+                ><img
+                  src="images/kicking-the-fog-1.jpg"
+                  alt="Woman crying behind a window on a train." class="rounded"
+              /></a>
+              <h2><a href="movies.html" class="overlay-movie">Kicking The Fog</a></h2>
+              <h3>
+                <a href="movies.html" class="overlay-movie">By Alexander Tolstoj</a>
+              </h3>
+            </div>
+            <div class="film-movies">
+              <a href="movies.html"
+                ><img src="images/preys-1.jpg" alt="Man falling in mid air." class="rounded"
+              /></a>
+              <h2><a href="movies.html" class="overlay-movie">Preys</a></h2>
+              <h3>
+                <a href="movies.html" class="overlay-movie">By Sara Salomonsson</a>
+              </h3>
+            </div>
+            <div class="film-movies">
+              <a href="movies.html"
+                ><img
+                  src="images/hunters-from-outer-space-1.jpg"
+                  alt="Woman sitting and looking into the camera. There is a large futuristic city in the background." class="rounded"
+              /></a>
+              <h2>
+                <a href="movies.html" class="overlay-movie">Hunters From Outer Space</a>
+              </h2>
+              <h3><a href="movies.html" class="overlay-movie">By Eric Armstrong</a></h3>
+            </div>
+            <div class="film-movies">
+              <a href="movies.html"
+                ><img
+                  src="images/fire-job-1.jpg"
+                  alt="Woman laughing while sitting in a sofa, looking out of view." class="rounded"
+              /></a>
+              <h2><a href="movies.html" class="overlay-movie">Fire Job</a></h2>
+              <h3><a href="movies.html" class="overlay-movie">By Susan Kim</a></h3>
+            </div>
+          </section>
+          </div>
         <h1>Popular:</h1>
         <a href="movies.html"
           ><img

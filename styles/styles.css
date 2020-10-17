@@ -134,14 +134,24 @@ nav ul {
 
 .overlay {
   text-decoration: none;
+  margin-top: -20px;
   color: #373837;
+}
+
+.overlay-movie {
+  text-decoration: none;
+  color: white;
 }
 
 .overlay:hover {
   color: #ffa987;
 }
 
-.featured {
+.overlay-movie:hover {
+  color: #ffa987;
+}
+
+/* .featured {
   background-color: white;
   max-width: 100%;
   height: 700px;
@@ -150,12 +160,20 @@ nav ul {
 }
 
 .featured-image {
-  width: 100%;
-}
+  object-fit: cover;
+} */
 
-/* Containers */
+/* .featured-image-movie {
+  object-fit: cover;
+} */
+
+/* Container Featured Home page */
 
 .container {
+  background-image: url("/images/of-the-forest-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 635px;
   position: relative;
   text-align: left;
   color: white;
@@ -188,10 +206,51 @@ nav ul {
   padding-right: 20px;
 }
 
+/* Container Featured movie page */
+
+.container-movie {
+  background-image: url("/images/of-the-forest-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.feat-movie {
+  position: absolute;
+  bottom: 114px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-movie {
+  position: absolute;
+  bottom: 53px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.creator-movie {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #featured {
   font-size: 24px;
   color: white;
 }
+
+/* Global featured links */
 
 #featured:hover {
   color: #ffa987;
@@ -297,6 +356,22 @@ h3,
 
 .rounded {
   border-radius: 5px;
+}
+
+/* New titles section movie page */
+
+.film-movies {
+  display: inline-block;
+  font-size: 11px;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.newtit-movies {
+  background-color: #373837;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
 }
 
 /* Presenting Square Eyes at the bottom */
