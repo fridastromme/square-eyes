@@ -234,7 +234,6 @@ input[type="submit"] {
 
 input[type="checkbox"] {
   display: block;
-  font-size: 0.5rem;
 }
 
 legend {
@@ -540,7 +539,31 @@ h3,
   color: #ffffff;
 }
 
+/* Search */
+
+input[type="text"] {
+  border: none;
+  width: 450px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #ffa987;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Create account */
+
+#back {
+  text-decoration: none;
+
+  color: white;
+  font-weight: bold;
+}
+
+#back:hover {
+  text-decoration: none;
+  color: #373837;
+  font-weight: bold;
+}
 
 #createprod {
   background-image: linear-gradient(#7b8576, #3141d4);
@@ -550,11 +573,19 @@ h3,
   background-image: linear-gradient(#ffa987, #ff5d1c);
 }
 
+#viewer-icon {
+  background-image: url("/images/icon-viewer-pink.png");
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
 .white-box {
   background-color: white;
   max-width: 700px;
   height: 680px;
-  filter: drop-shadow(10px 4px 4px #373737);
+  filter: drop-shadow(0px 3px 10px #373737);
   margin: auto;
   margin-top: 40px;
   border-radius: 10px 50px 50px 50px;
