@@ -170,7 +170,7 @@ nav ul {
 /* Container Featured Home page */
 
 .container {
-  background-image: url("/images/of-the-forest-1.jpg");
+  background-image: url("../images/of-the-forest-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 635px;
@@ -209,7 +209,7 @@ nav ul {
 /* Container Featured movie page */
 
 .container-movie {
-  background-image: url("/images/of-the-forest-1.jpg");
+  background-image: url("../images/of-the-forest-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 270px;
