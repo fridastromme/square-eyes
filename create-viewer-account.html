@@ -15,17 +15,28 @@
   <section>
     <a href="index.html">Go back</a>
     <div class="white-box">
-      <h1>Create your viewer account</h1>
-      <p>
-        Discover new independently made films on a pay-per-view basis, and
-        support young film makers. <a href="#">Learn more</a>
-      </p>
-      <h2>Your email</h2>
-      <h2>Password</h2>
-      <h2>Re-enter password</h2>
-      <p>Please send me news and recommendations via email.</p>
-      <p>I agree to the <a href="#">terms of use</a>.</p>
-      <a href="producer-profile.html" class="buttonred">Sign up now</a>
+      <div class="form">
+        <h1>Create your viewer account</h1>
+        <p>
+          Discover new independently made films on a pay-per-view basis, and support young film makers. <a href="#">Learn more</a>
+        </p>
+        <fieldset>
+        <form action="submit.php" method="POST">
+          <legend>Your email</legend>
+          <input type="email" name="email"/>
+          <legend>Your password</legend>
+          <input type="password" name="password"/>
+          <legend>Re-enter password</legend>
+          <input type="password" name="password-reenter"/>
+        <input type="checkbox" name="recommendations" value="recommendations" id="recommendations"><label for="recommendations">Please send me news and recommendations via email.</label>
+        <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the <a href="#">terms of use</a></label>
+      </div>
+    </fieldset>
+      <input type="submit" value="Sign up now">
+      </form>
+    </div>
+  </section>
+</main>
     </div>
   </section>
 </main>

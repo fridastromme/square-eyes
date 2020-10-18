@@ -30,56 +30,6 @@ body {
   float: left;
 }
 
-.buttonred {
-  width: 125px;
-  height: 20px;
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 5px;
-  margin-right: 40px;
-  margin-left: 70px;
-  font: normal 17px Gill Sans;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #ff5d1c;
-  border-radius: 25px 25px 25px 5px;
-  outline: none;
-  box-shadow: 0px 3px 10px #0000004b;
-}
-
-.buttonblue {
-  width: 125px;
-  height: 20px;
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  margin-left: 180px;
-  font: normal 17px Gill Sans;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #134196;
-  border-radius: 5px 25px 25px 25px;
-  outline: none;
-  box-shadow: 0px 3px 10px #0000004b;
-}
-
-.buttonblue2 {
-  display: inline-block;
-  padding: 10px 20px;
-  font: normal 17px Gill Sans;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #3141d4;
-  border-radius: 20px 20px 20px 20px;
-  outline: none;
-  box-shadow: 0px 3px 10px #0000004b;
-}
-
 body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #373837;
@@ -149,6 +99,148 @@ nav ul {
 
 .overlay-movie:hover {
   color: #ffa987;
+}
+
+/* Buttons */
+
+.buttonred {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 70px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff5d1c;
+  border-radius: 25px 25px 25px 5px;
+  outline: none;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonred:hover {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 70px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ff5d1c;
+  background-color: #ffffff;
+  border-radius: 25px 25px 25px 5px;
+  outline: solid 4px #ff5d1c;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonblue {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 180px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #134196;
+  border-radius: 5px 25px 25px 25px;
+  outline: none;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonblue:hover {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 180px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #134196;
+  background-color: #ffffff;
+  border-radius: 5px 25px 25px 25px;
+  outline: solid 4px #134191;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonblue2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3141d4;
+  border-radius: 20px 20px 20px 20px;
+  outline: none;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonblue2:hover {
+  display: inline-block;
+  padding: 10px 20px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #3141d4;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  outline: solid 4px #3141d4;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+/* Forms */
+
+fieldset {
+  border: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 350px;
+  height: 35px;
+  background-color: #ffa987;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff5d1c;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+input[type="checkbox"] {
+  display: block;
+  font-size: 0.5rem;
+}
+
+legend {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 3px;
 }
 
 /* .featured {
@@ -339,8 +431,8 @@ h3,
   background-color: white;
   box-shadow: 0px 3px 10px #0000004b;
   margin: auto;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .newtit {
   background-color: white;
@@ -372,6 +464,35 @@ h3,
   width: 100%;
   padding: 20px;
   margin: auto;
+}
+
+/* Categories in movie page */
+
+.categories {
+  padding-left: 30px;
+}
+
+.cat {
+  margin-bottom: 7px;
+}
+
+.cat-movie {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  background-image: linear-gradient(-130deg, #7b8576, #000000);
+  background-repeat: no-repeat;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+}
+
+#round-one {
+  border-radius: 5px 0px 0px 5px;
+}
+
+#round-two {
+  border-radius: 0px 5px 5px 0px;
 }
 
 /* Presenting Square Eyes at the bottom */
