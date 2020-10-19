@@ -608,6 +608,8 @@ input[type="text"] {
 .profile-one {
   /* min-height: 100vh; */
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   grid-auto-rows: minmax(100px, auto);
@@ -708,6 +710,34 @@ input[type="text"] {
 
 .pic {
   border-radius: 100px;
+}
+
+.user {
+  display: inline;
+}
+
+.small-link {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  color: #3141d4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.prod-discussion > p {
+  font-size: 0.9rem;
+}
+
+#comment-font {
+  display: inline;
+  font-size: 0.9rem;
+}
+
+#comment-bold {
+  display: inline;
+  font-weight: bold;
 }
 
 /*.prod-profile {
