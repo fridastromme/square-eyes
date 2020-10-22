@@ -740,39 +740,87 @@ input[type="text"] {
   font-weight: bold;
 }
 
+/* profilsider, en div-klasse for hver film*/
+
+/*Film 1 i "My movies"*/
+
 .cat-profile {
   display: inline-block;
-  width: 300px;
-  height: 200px;
+  width: 278px;
+  height: 179px;
   background-image: url("/images/loss-of-robots.jpg");
   background-repeat: no-repeat;
-  margin: 0px;
+  margin-bottom: 20px;
   padding: 0px;
-  outline: solid yellow;
 }
 
 #round-three {
+  width: 278px;
+  height: 179px;
   border-radius: 5px 5px 5px 5px;
 }
 
-/*.prod-profile {
-  grid-area: prod-profile;
+.overlay-profile {
+  position: relative;
+  top: 110px;
+  left: 15px;
+  text-decoration: none;
+  text-shadow: 8px 8px 20px #000000;
+  color: white;
+  line-height: 20px;
 }
-.prod-mymovies {
-  grid-area: prod-mymovies;
+
+.overlay-profile:hover {
+  color: #ffa987;
 }
-.prod-mylibrary {
-  grid-area: prod-mylibrary;
+
+/* Film 2 i "My movies"*/
+
+.cat-profile-2 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/friends-of-the-universe-1.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.prod-likedmovies {
-  grid-area: prod-likedmovies;
+
+/* Film 3 i "My movies" */
+
+.cat-profile-3 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/precious-dreams.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.prod-discussion {
-  grid-area: prod-discussion;
+
+/* Film 4 i "My library" */
+
+.cat-profile-4 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/preys-1.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.prod-settings {
-  grid-area: prod-discussion;
-} */
+
+/* Film 5 i "Liked movies" */
+
+.cat-profile-5 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/fire-job-1.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
+}
 
 /* Footer */
 
