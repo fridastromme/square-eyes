@@ -125,6 +125,45 @@ nav ul {
   box-shadow: 0px 3px 10px #0000004b;
 }
 
+.buttonred2 {
+  position: relative;
+  top: 30px;
+  left: 1170px;
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 70px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff5d1c;
+  border-radius: 25px 25px 25px 25px;
+  outline: none;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
+.buttonred2:hover {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-left: 70px;
+  font: normal 17px Gill Sans;
+  text-align: center;
+  text-decoration: none;
+  color: #ff5d1c;
+  background-color: #ffffff;
+  border-radius: 25px 25px 25px 25px;
+  outline: solid 4px #ff5d1c;
+  box-shadow: 0px 3px 10px #0000004b;
+}
+
 .buttonred:hover {
   width: 125px;
   height: 20px;
@@ -606,24 +645,14 @@ input[type="text"] {
 /* Producer profile */
 
 .profile-one {
-  /* min-height: 100vh; */
   display: grid;
   margin-left: 20px;
   margin-right: 20px;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   grid-auto-rows: minmax(100px, auto);
-  grid-template-columns: 4fr 1.5fr 1.5fr 3fr;
+  grid-template-columns: 3fr 1.5fr 1.5fr 2fr;
   grid-template-rows: 3fr 2fr 1.5fr 1.5 3fr;
-  /* grid-template-areas:
-    ".prod-profile .prod-mymovies .prod-mylibrary .prod-discussion"
-    ".prod-profile .prod-mymovies. prod-likedmovies .prod-discussion"
-    ".prod-profile .settings .settings .prod-discussion"; */
-  /* grid-template-areas:
-    ".prod-profile"
-    ".prod-mymovies .settings"
-    ".prod-mylibrary .prod-likedmovies .settings"
-    ".discussion .discussion .discussion .discussion"; */
 }
 
 .prod-profile {
@@ -663,9 +692,23 @@ input[type="text"] {
 
 .settings {
   display: grid;
-  padding: 50px;
+  padding: 30px;
   grid-column: 2/4;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#views,
+#likes,
+#comments {
+  margin: auto;
+}
+
+#likes {
+  margin-top: 27px !important;
+}
+
+#comments {
+  margin-top: 17px !important;
 }
 
 .settings > h1 {
@@ -822,11 +865,185 @@ input[type="text"] {
   padding: 0px;
 }
 
+#heart {
+  position: relative;
+  top: -65px;
+  left: 7px;
+}
+
+/* Bubbles in comment-section, profile */
+
+.bubbleblue-1 {
+  display: block;
+  background-color: #3141d4;
+  padding: 2px;
+  border-radius: 25px 25px 25px 5px;
+}
+
+.bubblewhite-1 {
+  display: block;
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 23px 23px 23px 3px;
+}
+
+.bubbleblue-2 {
+  display: block;
+  background-color: #3141d4;
+  margin-top: 15px;
+  padding: 2px;
+  border-radius: 25px 25px 5px 25px;
+}
+
+.bubblewhite-2 {
+  display: block;
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 23px 23px 3px 23px;
+}
+
+/* Viewer profile */
+
+.view-back {
+  background-image: url("/images/film-tape.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.profile-two {
+  display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-columns: 3fr 1.5fr 1.5fr 2fr;
+}
+
+.view-profile,
+.view-mylibrary,
+.view-likedmovies,
+.view-discussion {
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  filter: drop-shadow(0px 3px 10px #373737);
+}
+
+.view-profile {
+  margin-top: 60px;
+  padding: 100px;
+  grid-column: 1/2;
+  border-radius: 50px 50px 10px 50px !important;
+}
+
+.view-mylibrary {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 2/3;
+}
+
+.view-likedmovies {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 3/4;
+}
+
+.view-discussion {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 4/5;
+}
+
+.view-profile > .buttonred {
+  margin: auto;
+  border-radius: 25px 25px 25px 25px;
+}
+
+#red {
+  color: #ff5d1c;
+}
+
+.small-link2 {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  color: #ff5d1c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.dashlink2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #373837;
+  margin: 10px;
+}
+
+.dashlink2:hover {
+  color: #ff5d1c;
+}
+
+/* comment section bubbles viewer profile */
+
+.bubblered-1 {
+  display: block;
+  background-color: #ff5d1c;
+  padding: 2px;
+  border-radius: 25px 25px 25px 5px;
+}
+
+.bubblered-2 {
+  display: block;
+  background-color: #ff5d1c;
+  margin-top: 15px;
+  padding: 2px;
+  border-radius: 25px 25px 5px 25px;
+}
+
+/* The rest of the movies in the Viewer-profile */
+
+.cat-profile-6 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/spiders-with-a-goal.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.cat-profile-7 {
+  display: inline-block;
+  width: 278px;
+  height: 179px;
+  background-image: url("/images/hunters-from-outer-space-1.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+#view-link {
+  color: #373837;
+}
+
+#view-link:hover {
+  color: #ff5d1c;
+}
+
 /* Footer */
 
 footer {
   display: inline-block;
-  max-width: 100%;
+  size: cover;
   height: 100px;
   padding: 0px;
   margin: 0px;
