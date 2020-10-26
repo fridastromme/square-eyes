@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 3rem;
@@ -58,7 +62,7 @@ header {
   text-align: right;
   grid-template-areas: "logo nav-li";
   position: sticky;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo {
@@ -107,6 +111,16 @@ a:hover {
   color: #ff5d1c;
 }
 
+.red__round {
+  border-radius: 25px;
+}
+
+.red__round:hover {
+  border-color: #ff5d1c;
+  background-color: transparent;
+  color: #ff5d1c;
+}
+
 .blue {
   border: 3px solid #134196;
   background-color: #134196;
@@ -114,10 +128,22 @@ a:hover {
   box-shadow: 0px 3px 10px #373736;
 }
 
+.blue__round {
+  background-color: #3141d4;
+  border: 3px solid #3141d4;
+  border-radius: 25px;
+}
+
 .blue:hover {
   border-color: #134196;
   background-color: transparent;
   color: #134196;
+}
+
+.blue__round:hover {
+  color: #3141d4;
+  background-color: transparent;
+  border: 3px solid #3141d4;
 }
 
 .bluer {
@@ -232,6 +258,7 @@ body {
   position: relative;
   text-align: left;
   text-shadow: 0px 10px 40px #000000;
+  z-index: 1;
 }
 
 .container h1,
@@ -409,6 +436,7 @@ body {
   height: 300px;
   position: relative;
   text-align: left;
+  z-index: 1;
 }
 
 .container-movie h1,
@@ -513,14 +541,14 @@ body {
   padding-top: 20px;
 }
 
-.cat {
+.categories-title {
   color: white;
   font-size: 1.1rem;
   margin-top: 13px;
   margin-bottom: 10px;
 }
 
-.cat-movie {
+.categories-title__movie {
   display: inline-block;
   width: 250px;
   height: 150px;
@@ -543,7 +571,7 @@ body {
   border-radius: 0px 5px 5px 0px;
 }
 
-.cat-movie > h4,
+.categories-title__movie > h4,
 h5 {
   color: white;
   position: relative;
@@ -552,17 +580,17 @@ h5 {
   cursor: pointer;
 }
 
-.cat-movie > h4:hover,
-.cat-movie > h5:hover {
+.categories-title__movie > h4:hover,
+.categories-title__movie > h5:hover {
   color: #ffa987;
 }
 
-.cat-movie > h4 {
+.categories-title__movie > h4 {
   font-size: 1.3rem;
   margin-bottom: 3px;
 }
 
-.cat-movie > h5 {
+.categories-title__movie > h5 {
   font-size: 0.8rem;
 }
 
@@ -578,41 +606,111 @@ h5 {
 
 /* SEARCH */
 
-.overlay-box {
-  position: sticky;
+.overlay-box__search {
+  position: absolute;
   background-color: white;
-  max-width: 700px;
   filter: drop-shadow(0px 3px 10px #373737);
-  margin: auto;
   padding: 70px 0;
   padding-left: 100px;
+  padding-right: 100px;
   margin-top: 40px;
+  left: 380px;
   border-radius: 50px 10px 50px 50px;
-  z-index: 20;
+  z-index: 100;
 }
 
-.overlay-box > h1 {
+.overlay-box__search > h1 {
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
 input[type="text"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 400px;
   height: 50px;
   background-color: #ffa987;
   border: none;
   border-radius: 5px;
+  padding-left: 15px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: #ffc3ac;
 }
 
 ::placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #373736;
   font-size: 0.9rem;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
-.overlay-box > a {
+.overlay-box__search > a {
   margin-left: 20px;
+}
+
+.icon__search {
+  position: relative;
+  top: 14px;
+  display: inline-block;
+  background-image: url("/images/search-icon.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.icon__search:hover {
+  background-image: url("/images/search-icon-red.png");
+}
+
+/* Who are you? overlay-box */
+
+.overlay-box__signup {
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding: 90px 0;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 40px;
+  left: 620px;
+  border-radius: 50px 10px 50px 50px;
+  z-index: 100;
+}
+
+.overlay-box__signup > h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.overlay-box__signup > .red__round {
+  margin-left: 100px;
+}
+
+/* SIGN IN */
+
+fieldset {
+  border: none;
+}
+
+input[type="email"],
+input[type="password"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  width: 350px;
+  height: 35px;
+  background-color: #ffa987;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #373736;
 }
 
 /* Producer profile */
