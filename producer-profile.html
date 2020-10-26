@@ -4,41 +4,39 @@
     <title>Square Eyes | Home</title>
     <meta name="description" content="The home of independently made films." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="forside.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="content-wrap">
-        <a href="index.html"
-          ><img
-            src="images/squareeyes_logo.png"
-            class="logo"
-            alt="Website logo"
-        /></a>
-        <nav>
-          <ul>
-            <div class="headmen">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="movies.html">Movies</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="search.html" class="active">My profile</a></li>
-           </div>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <header>
+            <a href="index.html"
+              ><img
+                src="images/squareeyes_logo.png"
+                class="logo"
+                alt="Website logo"
+            /></a>
+            <nav>
+                <ul>
+                      <li><a href="forside.html">Home</a></li>
+                      <li><a href="filmside.html">Movies</a></li>
+                      <li><a href="soek-home.html">Search</a></li>
+                      <li><a href="sign-up.html" class="active">My profile</a></li>
+                  </ul>
+            </nav>
+            </header>
 <main class="prod-back">
-  <li><a class="buttonred2" href="sign-up.html">Upload movie</a></li>
+  <li><a class="btn red" id="upload" href="sign-up.html">Upload movie</a></li>
     <section class="profile-one">
         <div class="prod-profile">
                 <img src="images/kate-mourey.jpg" class="pic" alt="Profile picture of Kate Mourey."/>
             <h1 id="blue">Kate Mourey</h1>
             <div class="user">
-            <h2><a href="#" class="small-link">@KitKat</a></h2>
+            <a href="#" class="small-link">@KitKat</a>
             <h2>Producer</h2>
             </div>
+            <div class="about">
             <p>In vel elit vitae tortor iaculis malesuada et sed enim. Sed purus arcu, scelerisque at metus sed, maximus aliquam lacus.</p>
-            <a class="buttonblue2" href="#">Edit profile</a></li>
+            </div>
+            <a class="btn bluer" href="#">Edit profile</a></li>
             <ul>
                 <li><a href="#" class="dashlink">Dashboard</a></li>
                 <li><a href="#" class="dashlink">Messages</a></li>
@@ -51,42 +49,42 @@
             </ul>
         </div>
 <div class="prod-mymovies">
-    <h1>My movies</h1>
-    <div class="cat-profile" id="round-three">
-  <h2><a href="movies.html" class="overlay-profile">Loss Of Robots</a></h2>
-  <h3><a href="movies.html" class="overlay-profile">By Name Name</a></h3>
+    <h2>My movies</h2>
+    <div id="pop-2">
+  <h3><a href="movies.html" id="title-profile">Loss Of Robots</a></h3>
+  <h4><a href="movies.html" id="creator-profile">By Name Name</a></h4>
   </div>
-        <div class="cat-profile-2" id="round-three">
-        <h2><a href="movies.html" class="overlay-profile">Friends Of The Universe</a></h2>
-        <h3><a href="movies.html" class="overlay-profile">By Name Name</a></h3>
+        <div id="pop-1">
+        <h3><a href="movies.html" id="title-profile">Friends Of The Universe</a></h3>
+        <h4><a href="movies.html" id="creator-profile">By Name Name</a></h4>
         </div>
-        <div class="cat-profile-3" id="round-three">
-      <h2><a href="movies.html" class="overlay-profile">Precious Dreams</a></h2>
-      <h3><a href="movies.html" class="overlay-profile">By Name Name and Name Name</a></h3>
+        <div id="pop-3">
+      <h3><a href="movies.html" id="title-profile">Precious Dreams</a></h3>
+      <h4><a href="movies.html" id="creator-profile">By Name Name and Name Name</a></h4>
 </div>
       <a href="#" id="view-link">View all</a>
 </div>
     <div class="prod-mylibrary">
-<h1>My library</h1>
-<div class="cat-profile-4" id="round-three">
-              <h2><a href="movies.html" class="overlay-profile">Preys</a></h2>
-              <h3>
-                <a href="movies.html" class="overlay-profile">By Sara Salomonsson</a>
-              </h3>
+<h2>My library</h2>
+<div id="new-2">
+              <h3><a href="movies.html" id="title-profile">Preys</a></h3>
+              <h4>
+                <a href="movies.html" id="creator-profile">By Sara Salomonsson</a>
+              </h4>
 </div>
               <a href="#" id="view-link">View all</a>
     </div>
     <div class="prod-likedmovies">
-<h1>Liked movies</h1>
-<div class="cat-profile-5" id="round-three">
-              <h2><a href="movies.html" class="overlay-profile">Fire Job</a></h2>
-              <h3><a href="movies.html" class="overlay-profile">By Susan Kim</a></h3>
+<h2>Liked movies</h2>
+<div id="new-4">
+              <h3><a href="movies.html" id="title-profile">Fire Job</a></h3>
+              <h4><a href="movies.html" id="creator-profile">By Susan Kim</a></h4>
               <div id="heart"><img src="images/heart-icon.png"></div>
 </div>
               <a href="#" id="view-link">View all</a>
             </div>
     <div class="prod-discussion">
-<h1>Discussion</h1>
+<h2>Discussion</h2>
 <div class="bubbleblue-1">
   <div class="bubblewhite-1">
 <p><a href="#" class="small-link">@Mmarshall</a> commented on <span id="comment-bold">Preys</span>: Mauris diam tortor, ultricies nec lacus vitae, hendrerit tempus … <a href="#" class="small-link">View more</a></p>
@@ -112,80 +110,80 @@
     </div>
     <div class="settings">
       <div id="views">
-        <img src="/images/viewer-icon.png" alt="Views on your projects.">
-    <h1>Views</h1>
+        <img src="/images/views-icon.png" alt="Views on your projects." class="setting-icon">
+    <a href="#">Views</a>
   </div>
   <div id="likes">
-    <img src="/images/heart-icon2.png" alt="Likes on your projects.">
-    <h1>Likes</h1>
+    <img src="/images/heart-icon2.png" alt="Likes on your projects." class="setting-icon">
+    <a href="#">Likes</a>
   </div>
   <div id="comments">
-    <img src="/images/comment-icon.png" alt="Comments on your projects.">
-    <h1>Comments</h1>
+    <img src="/images/comment-icon.png" alt="Comments on your projects." class="setting-icon">
+    <a href="#">Comments</a>
     </div>
 </div>
     </div>
     </section>
     </main>
     <footer>
-        <nav>
+      <nav>
           <ul>
             <div class="footer-group">
             <div class="footer-link">
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#" id="ft-link">Privacy policy</a></li>
           </div>
             <div class="footer-link">
-            <li><a href="#">Cookie settings</a></li>
-          </div>
-        </div>
-        <div class="footer-group">
-            <div class="footer-link">
-            <li><a href="#">Gift card</a></li>
-          </div>
-            <div class="footer-link">
-            <li><a href="#">Jobs</a></li>
+            <li><a href="#" id="ft-link">Cookie settings</a></li>
           </div>
         </div>
         <div class="footer-group">
             <div class="footer-link">
-            <li><a href="#">Subtitles</a></li>
+            <li><a href="#" id="ft-link">Gift card</a></li>
           </div>
             <div class="footer-link">
-            <li><a href="#">Terms of use</a></li>
-          </div>
-        </div>
-        <div class="footer-group">
-            <div class="footer-link">
-            <li><a href="#">About us</a></li>
-          </div>
-            <div class="footer-link">
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#" id="ft-link">Jobs</a></li>
           </div>
         </div>
         <div class="footer-group">
             <div class="footer-link">
-            <li><a href="#">Create account</a></li>
+            <li><a href="#" id="ft-link">Subtitles</a></li>
           </div>
             <div class="footer-link">
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#" id="ft-link">Terms of use</a></li>
+          </div>
+        </div>
+        <div class="footer-group">
+            <div class="footer-link">
+            <li><a href="#" id="ft-link">About us</a></li>
+          </div>
+            <div class="footer-link">
+            <li><a href="#" id="ft-link">Contact us</a></li>
+          </div>
+        </div>
+        <div class="footer-group">
+            <div class="footer-link">
+            <li><a href="#" id="ft-link">Create account</a></li>
+          </div>
+            <div class="footer-link">
+            <li><a href="#" id="ft-link">Sign in</a></li>
           </div>
         </div>
         <div class="footer-group">
           <div class="icon-link">
-            <li><a href="#"><img src="images/facebook-circular-logo.png" class="Facebook" alt="Go to our Facebook page"/></a>
+            <li><a href="#"><img src="images/facebook-circular-logo.png" class="facebook" alt="Go to our Facebook page"/></a>
           </div>
           <div class="icon-link">
-            <li><a href="#"><img src="images/instagram-logo.png" class="Instagram" alt="Go to our Instagram page"/></a>
+            <li><a href="#"><img src="images/instagram-logo.png" class="instagram" alt="Go to our Instagram page"/></a>
           </div>
           <div class="icon-link">
-            <li><a href="#"><img src="images/youtube.png" class="Youtube" alt="Go to our Youtube page"/></a>
+            <li><a href="#"><img src="images/youtube.png" class="youtube" alt="Go to our Youtube page"/></a>
           </div>
           <div class="icon-link">
-            <li><a href="#"><img src="images/twitter-icon.png" class="Twitter" alt="Go to our Twitter page"/></a>
+            <li><a href="#"><img src="images/twitter-icon.png" class="twitter" alt="Go to our Twitter page"/></a>
           </div>
           </div>
           </ul>
         </nav>
-    </footer>
+  </footer>
   </body>
 </html>
