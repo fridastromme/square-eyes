@@ -55,13 +55,190 @@ li {
 
 /* Header */
 
+/* Header checkbox-links */
+
+.nav-link {
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-link__white {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link__blue {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link__blue:hover {
+  color: #134196;
+}
+
+#signup-background {
+  background-color: #ff5d1c;
+  padding-top: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 15px;
+  border-radius: 25px 25px 25px 5px;
+  box-shadow: 0px 3px 10px #c4c4c4;
+}
+
+#signup-hover {
+  background-color: transparent;
+  padding: 12px 38px;
+  border-radius: 22px 22px 22px 2px;
+  cursor: pointer;
+}
+
+#signup-hover:hover {
+  background-color: white;
+}
+
+#signup-background__bottom {
+  position: relative;
+  left: 150px;
+  display: inline-block;
+  background-color: #134196;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 15px;
+  border-radius: 5px 25px 25px 25px;
+  box-shadow: 0px 3px 10px #000000;
+}
+
+#signup-hover__bottom {
+  background-color: transparent;
+  padding: 12px 38px;
+  border-radius: 2px 22px 22px 22px;
+  cursor: pointer;
+}
+
+#signup-hover__bottom:hover {
+  background-color: #fd6b4f;
+}
+
+.overlay-box__signin {
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding: 70px 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 60px;
+  left: 670px;
+  border-radius: 50px 10px 50px 50px;
+  z-index: 100;
+}
+
+.overlay-box__search {
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding: 60px 0;
+  padding-bottom: 70px;
+  padding-left: 80px;
+  padding-right: 100px;
+  margin-top: 60px;
+  left: 380px;
+  border-radius: 50px 10px 50px 50px;
+  z-index: 100;
+}
+
+.overlay-box__signup {
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding: 90px 0;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 60px;
+  left: 640px;
+  border-radius: 50px 10px 50px 50px;
+  z-index: 100;
+}
+
+.signup__buttons {
+  text-align: center;
+}
+
+.overlay-box__signup__bottom {
+  position: absolute;
+  background-color: white;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding: 90px 0;
+  width: 320px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: -340px;
+  margin-left: -1080px;
+  left: 400px;
+  border-radius: 50px 50px 10px 50px;
+  z-index: 100;
+}
+
+.overlay-box__signup__bottom > h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.overlay-box__signup > h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.overlay-box__search > h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.overlay-box__signin > h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.overlay-box__signin,
+.overlay-box__search,
+.overlay-box__signup,
+.overlay-box__signup__bottom {
+  display: none;
+}
+
+#overlay-box,
+#overlay-box__2,
+#overlay-box__3,
+#overlay-box__4 {
+  display: none;
+}
+
+#overlay-box:checked ~ .overlay-box__signin,
+#overlay-box__2:checked ~ .overlay-box__search,
+#overlay-box__3:checked ~ .overlay-box__signup,
+#overlay-box__4:checked ~ .overlay-box__signup__bottom {
+  display: block;
+}
+
 /* CSS grid in header */
 
 header {
   display: grid;
   background-color: white;
   box-shadow: 0px 3px 10px #373736;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
   margin: 0px;
   text-align: right;
   grid-template-areas: "logo nav-li";
@@ -72,14 +249,15 @@ header {
 .logo {
   width: 130px;
   float: left;
-  padding: 5px 0;
+  padding: 2px 0;
   padding-left: 20px;
   grid-area: logo;
 }
 nav li {
+  margin-top: 20px;
   display: inline-block;
   font-weight: bold;
-  padding: 5px 0;
+  padding: 2px 0;
   margin-right: 40px;
   grid-area: nav-li;
 }
@@ -97,7 +275,6 @@ a:hover {
 /* Buttons */
 
 .btn {
-  display: block;
   border: 3px solid #ff5d1c;
   background-color: #ff5d1c;
   padding: 12px 38px;
@@ -110,6 +287,22 @@ a:hover {
   box-shadow: 0px 3px 10px #c4c4c4;
 }
 
+.pink {
+  position: relative;
+  left: 270px;
+  border: 3px solid #ffa987;
+  background-color: #ffa987;
+  color: #373837;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 3px 10px #2b2b2a;
+}
+
+.pink:hover {
+  border: 3px solid #ffa987;
+  background-color: transparent;
+  color: #ffa987;
+}
+
 .red:hover {
   border-color: #ff5d1c;
   background-color: transparent;
@@ -117,7 +310,6 @@ a:hover {
 }
 
 .red__round {
-  display: block;
   border-radius: 25px;
 }
 
@@ -128,7 +320,6 @@ a:hover {
 }
 
 .blue {
-  display: block;
   border: 3px solid #134196;
   background-color: #134196;
   border-radius: 5px 25px 25px 25px;
@@ -136,7 +327,6 @@ a:hover {
 }
 
 .blue__round {
-  display: block;
   background-color: #3141d4;
   border: 3px solid #3141d4;
   border-radius: 25px;
@@ -155,7 +345,6 @@ a:hover {
 }
 
 .bluer {
-  display: block;
   border: 3px solid #3141d4;
   background-color: #3141d4;
   border-radius: 25px 25px 25px 25px;
@@ -184,6 +373,10 @@ footer {
   font-weight: lighter;
   box-shadow: 3px 3px 10px #373736;
   z-index: 1;
+}
+
+footer > nav li {
+  margin-top: 8px;
 }
 
 .footer-link {
@@ -258,6 +451,88 @@ body {
 }
 
 /* Featured film */
+
+.movie-info__featured {
+  position: absolute;
+  width: 530px;
+  background-color: #373837;
+  filter: drop-shadow(0px 3px 10px #373737);
+  padding-top: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 50px;
+  margin-left: 20px;
+  left: 0px;
+  border-radius: 50px 50px 50px 10px;
+  z-index: 100;
+}
+
+.movie-info__image {
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+  margin-bottom: 20px;
+}
+
+.movie-info__container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.movie-info__container > h2,
+.movie-info__container > h3,
+.movie-info__container > h4,
+.movie-info__container > h5,
+.movie-info__container > p {
+  color: white;
+}
+
+.movie-info__title {
+  font-size: 2.4rem;
+}
+
+.movie-info__creator {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.movie-info__year {
+  display: inline;
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.movie-info__category {
+  display: inline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.movie-info__viewer-count {
+  display: inline;
+  margin-left: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+  font-weight: normal;
+  position: static;
+  padding-left: 0px;
+  cursor: default;
+}
+
+.movie-info__text {
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.movie-info__price {
+  color: white;
+}
+
 .container {
   background-image: url("../images/of-the-forest-1.jpg");
   background-size: cover;
@@ -614,24 +889,6 @@ h5 {
 
 /* SEARCH */
 
-.overlay-box__search {
-  position: absolute;
-  background-color: white;
-  filter: drop-shadow(0px 3px 10px #373737);
-  padding: 70px 0;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 40px;
-  left: 380px;
-  border-radius: 50px 10px 50px 50px;
-  z-index: 100;
-}
-
-.overlay-box__search > h1 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-
 input[type="text"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 400px;
@@ -672,50 +929,9 @@ input[type="text"]:focus {
   background-image: url("/images/search-icon-red.png");
 }
 
-/* Who are you? overlay-box */
-
-.overlay-box__signup {
-  position: absolute;
-  background-color: white;
-  filter: drop-shadow(0px 3px 10px #373737);
-  padding: 90px 0;
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-top: 40px;
-  left: 620px;
-  border-radius: 50px 10px 50px 50px;
-  z-index: 100;
-}
-
-.overlay-box__signup > h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.overlay-box__signup > .red__round {
-  margin-left: 100px;
-}
+/* SIGN UP overlay-box */
 
 /* SIGN IN */
-
-.overlay-box__signin {
-  position: absolute;
-  background-color: white;
-  filter: drop-shadow(0px 3px 10px #373737);
-  padding: 70px 0;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 40px;
-  left: 650px;
-  border-radius: 50px 10px 50px 50px;
-  z-index: 100;
-}
-
-.overlay-box__signin > h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
 
 fieldset {
   border: none;
@@ -737,6 +953,7 @@ legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color: #373736;
+  margin-bottom: 5px;
 }
 
 .form__signin {
