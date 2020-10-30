@@ -450,19 +450,19 @@ body {
     "footer";
 }
 
-/* Featured film */
+/* Movie info overlay-box */
 
 .movie-info__featured {
   position: absolute;
-  width: 530px;
+  width: 500px;
   background-color: #373837;
-  filter: drop-shadow(0px 3px 10px #373737);
-  padding-top: 0;
+  filter: drop-shadow(0px 3px 10px #292929);
+  padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 0px;
+  margin-top: 7px;
   padding-bottom: 50px;
-  margin-left: 20px;
+  margin-left: 30px;
   left: 0px;
   border-radius: 50px 50px 50px 10px;
   z-index: 100;
@@ -471,7 +471,14 @@ body {
 .movie-info__image {
   width: 100%;
   border-radius: 50px 50px 0px 0px;
-  margin-bottom: 20px;
+  margin-bottom: -40px;
+}
+
+.movie-info__go-back {
+  max-width: 50px;
+  position: relative;
+  left: 435px;
+  bottom: 205px;
 }
 
 .movie-info__container {
@@ -483,8 +490,7 @@ body {
 .movie-info__container > h2,
 .movie-info__container > h3,
 .movie-info__container > h4,
-.movie-info__container > h5,
-.movie-info__container > p {
+.movie-info__container > h5 {
   color: white;
 }
 
@@ -495,6 +501,13 @@ body {
 .movie-info__creator {
   font-size: 1.2rem;
   margin-bottom: 30px;
+}
+
+.movie-info__line {
+  border: none;
+  border-top: 3px solid white;
+  position: relative;
+  bottom: 14px;
 }
 
 .movie-info__year {
@@ -512,7 +525,7 @@ body {
 
 .movie-info__viewer-count {
   display: inline;
-  margin-left: 150px;
+  margin-left: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
   font-weight: normal;
@@ -521,17 +534,42 @@ body {
   cursor: default;
 }
 
+.movie-info__viewer-count-icon {
+  position: relative;
+  left: 130px;
+  margin-top: 0px;
+}
+
 .movie-info__text {
+  position: relative;
+  left: -130px;
+  color: white;
   max-width: 300px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 0.8rem;
   line-height: 1.4;
 }
 
 .movie-info__price {
+  position: relative;
+  top: -60px;
+  left: 170px;
   color: white;
 }
+
+.movie-info__price > h5 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.movie-info__help {
+  position: relative;
+  left: 235px;
+  top: 5px;
+}
+
+/* Featured film */
 
 .container {
   background-image: url("../images/of-the-forest-1.jpg");
@@ -669,6 +707,11 @@ body {
   color: white;
   font-size: 0.8rem;
   text-shadow: 0px 5px 15px #000000;
+}
+
+#title2:hover,
+#creator2:hover {
+  color: #ffa987;
 }
 
 #title:hover,
@@ -885,6 +928,46 @@ h5 {
 
 #view-all-movie2:hover {
   color: #ffa987;
+}
+
+/* WATCH MOVIE PAGE */
+
+.watch-movie {
+  background-color: #373837;
+  height: 38vw;
+}
+
+.watch-movie__video {
+  position: relative;
+  background-image: url("images/of-the-forest-3.jpg");
+  background-repeat: no-repeat;
+  height: 617px;
+  max-width: 1100px;
+  margin: auto;
+  filter: drop-shadow(0px 3px 10px #292929);
+  z-index: 1;
+}
+
+.watch-movie__video > h1,
+.watch-movie__video > h2 {
+  position: relative;
+  color: white;
+  text-shadow: 0px 6px 20px #000000;
+  top: 20px;
+  left: 20px;
+}
+
+.watch-movie__play {
+  position: relative;
+  top: 150px;
+  width: 200px;
+  margin: auto;
+}
+
+.watch-movie__play-button {
+  width: 170px;
+  filter: drop-shadow(0px 3px 20px #000000);
+  cursor: pointer;
 }
 
 /* SEARCH */

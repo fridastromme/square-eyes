@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="forside.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="movie-page">
       <header>
             <a href="index.html"
               ><img
@@ -16,8 +16,8 @@
             /></a>
             <nav>
               <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
                     <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
                     ><a class="nav-link">Search</a></label>
                     <div class="overlay-box__search">
@@ -58,53 +58,17 @@
           </nav>
             </header>
             <main>
-                <section class="featured">
-                    <div class="container">
-                        <a href="movie-info-home.html">
-          <h1>Featured:</h1>
-          <h2>Of The Forest</h2>
-          <h3>By Lucy Thompson</h3></a>
+                <section class="watch-movie">
+                    <div class="watch-movie__video">
+                        <h1>Of The Forest</h1>
+                        <h2>By Lucy Thompson</h2>
+                        <div class="watch-movie__play">
+                        <img src="images/play.png" alt="Play movie" class="watch-movie__play-button">
+                        </div>
                     </div>
                 </section>
-                <section class="new-titles">
-<h2>New titles:</h2>
-<div class="new">
-<div id="new-1">
-<a href="movies.html"><h3 id="title">Kicking The Fog</h3>
-  <h4 id="creator">By Alexander Tolstoj</h4></a>
-  </div>
-  <div id="new-2">
-    <a href="movies.html"><h3 id="title">Preys</h3>
-      <h4 id="creator">By Sara Salomonsson</h4></a>
-      </div>
-      <div id="new-3">
-        <a href="movies.html"><h3 id="title2">Hunters From Outer Space</h3>
-          <h4 id="creator2">By Eric Armstrong</h4></a>
-          </div>
-          <div id="new-4">
-            <a href="movies.html"><h3 id="title">Fire Job</h3>
-              <h4 id="creator">By Susan Kim</h4></a>
-              </div>
-              <a href="movies.html" id="view-all">View all</a>
-              </div>
-            </section>
-                <section class="presentation">
-                    <div class="pres">
-                      <h2>We connect movie lovers.</h2>
-                      <p class="presentation__p">Independently produced movies crafted by people passionate about film making for people passionate about watching them.</p>
-                      <p>Join us as a producer or viewer.</p>
-                      <input type="checkbox" id="overlay-box__4"/><label for="overlay-box__4"
-                    ><a class="nav-link__blue"><span id="signup-background__bottom"><span id="signup-hover__bottom">Sign up</span></span></a></label>
-                   <div class="overlay-box__signup__bottom">
-                    <h1>Who are you?</h1>
-                    <div class="signup__buttons">
-                    <a href="create-producer-account.html"> <button class="btn blue__round">Producer</button></a>
-                    <a href="create-viewer-account.html"> <button class="btn red__round">Viewer</button></a>
-                    </div>
-                  </div>
-                  </section>
-                  </main>
-            <footer>
+                </main>
+                <footer>
                 <nav>
                     <ul>
                       <div class="footer-group">
@@ -164,3 +128,5 @@
                     </ul>
                   </nav>
             </footer>
+            </body>
+            </html>
