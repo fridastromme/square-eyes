@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  width: 100vw;
+}
+
 button:focus {
   outline: none;
 }
@@ -54,20 +58,6 @@ li {
 
 /* Header */
 
-/* hamburger-menu */
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-.mobile-menu {
-  display: none;
-}
-
 /* Header checkbox-links */
 
 .nav-link {
@@ -104,6 +94,7 @@ li {
 }
 
 #signup-hover {
+  display: inline-block;
   background-color: transparent;
   padding: 12px 38px;
   border-radius: 22px 22px 22px 2px;
@@ -267,7 +258,7 @@ header {
 }
 
 .logo {
-  width: 130px;
+  max-width: 130px;
   float: left;
   padding: 2px 0;
   padding-left: 20px;
@@ -308,8 +299,8 @@ a:hover {
 }
 
 .pink {
-  position: relative;
-  left: 270px;
+  float: right;
+  margin-right: 30px;
   border: 3px solid #ffa987;
   background-color: #ffa987;
   color: #373837;
@@ -385,7 +376,6 @@ a:hover {
 footer {
   position: sticky;
   display: inline-block;
-  size: cover;
   padding-left: 120px;
   background: #ffffff;
   color: white;
@@ -423,19 +413,19 @@ footer > nav li {
 }
 
 .facebook {
-  width: 35px;
+  max-width: 35px;
 }
 
 .instagram {
-  width: 35px;
+  max-width: 35px;
 }
 
 .youtube {
-  width: 47px;
+  max-width: 47px;
 }
 
 .twitter {
-  width: 35px;
+  max-width: 35px;
 }
 
 /* FRONT PAGE */
@@ -470,11 +460,11 @@ body {
     "footer";
 }
 
-/* Movie info overlay-box */
+/* Movie info overlay-box RESPONSIVE CHECK : - ) */
 
 .movie-info__featured {
   position: absolute;
-  width: 500px;
+  max-width: 500px;
   background-color: #373837;
   filter: drop-shadow(0px 3px 10px #292929);
   padding-top: 0px;
@@ -483,6 +473,7 @@ body {
   margin-top: 7px;
   padding-bottom: 50px;
   margin-left: 30px;
+  margin-right: 30px;
   left: 0px;
   border-radius: 50px 50px 50px 10px;
   z-index: 100;
@@ -491,19 +482,23 @@ body {
 .movie-info__image {
   width: 100%;
   border-radius: 50px 50px 0px 0px;
-  margin-bottom: -40px;
+  margin-bottom: 20px;
+}
+
+.movie-info__image-container {
+  max-width: 100%;
 }
 
 .movie-info__go-back {
-  max-width: 50px;
-  position: relative;
-  left: 435px;
-  bottom: 205px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  width: 10%;
 }
 
 .movie-info__container {
   position: relative;
-  width: 300px;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -564,18 +559,18 @@ body {
   position: relative;
   left: -130px;
   color: white;
-  max-width: 300px;
+  width: 90%;
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: -20px;
   font-size: 0.8rem;
   line-height: 1.4;
 }
 
 .movie-info__price {
   position: relative;
-  top: -60px;
-  left: 170px;
   color: white;
+  bottom: 50px;
+  left: 50px;
 }
 
 .movie-info__price > h5 {
@@ -585,43 +580,43 @@ body {
 
 .movie-info__help {
   position: relative;
-  left: 235px;
-  top: 5px;
+  left: 112px;
+  top: 10px;
 }
 
 /* Featured film */
 
 .container {
-  background-image: url("../images/of-the-forest-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 660px;
-  position: relative;
-  text-align: left;
-  text-shadow: 0px 10px 40px #000000;
-  z-index: 1;
+  width: 100vw;
+  height: 450px;
 }
 
-.container h1,
-.container h2,
-.container h3 {
+.featured__container-image {
+  position: absolute;
+  width: 100vw;
+}
+
+.featured__headings h1,
+.featured__headings h2,
+.featured__headings h3 {
   position: relative;
-  top: 420px;
+  bottom: 20px;
   padding-left: 40px;
   color: white;
+  text-shadow: 0px 5px 20px #000000;
 }
 
-.container h1:hover,
-.container h2:hover,
-.container h3:hover {
+.featured__headings h1:hover,
+.featured__headings h2:hover,
+.featured__headingsh3:hover {
   color: #ffa987;
 }
 
-.container h1 {
+.featured__headings h1 {
   font-size: 2rem;
 }
 
-.container h2 {
+.featured__headings h2 {
   font-size: 5rem;
 }
 
@@ -629,26 +624,31 @@ body {
 
 .new-titles {
   position: sticky;
+  padding-bottom: 80px;
   background-color: white;
   box-shadow: 0px 3px 10px #373736;
   height: 280px;
-  padding: 60px;
   z-index: 2;
 }
 
 .new-titles > h2 {
-  padding-left: 25px;
+  position: relative;
+  left: 20px;
+  padding-top: 50px;
   margin-bottom: 10px;
 }
 
-#view-all {
+.view-all-movies {
   position: relative;
-  left: 1102px;
+  float: right;
+  margin-right: 30px;
   margin-top: 10px;
 }
 
 .new {
+  width: 100vw;
   display: grid;
+  padding: 0px;
   grid-template-areas:
     "news news news news"
     "new-1 new-2 new-3 new-4";
@@ -693,8 +693,8 @@ body {
 
 #title {
   position: relative;
+  padding-top: 46%;
   padding-left: 12px;
-  top: 125px;
   color: white;
   font-size: 1.3rem;
   text-shadow: 0px 5px 15px #000000;
@@ -704,7 +704,6 @@ body {
 #creator {
   position: relative;
   padding-left: 12px;
-  top: 125px;
   color: white;
   font-size: 0.8rem;
   text-shadow: 0px 5px 15px #000000;
@@ -712,8 +711,8 @@ body {
 
 #title2 {
   position: relative;
+  padding-top: 38%;
   padding-left: 12px;
-  top: 102px;
   color: white;
   font-size: 1.3rem;
   text-shadow: 0px 5px 15px #000000;
@@ -722,8 +721,8 @@ body {
 
 #creator2 {
   position: relative;
+  padding-top: 0%;
   padding-left: 12px;
-  top: 102px;
   color: white;
   font-size: 0.8rem;
   text-shadow: 0px 5px 15px #000000;
@@ -744,14 +743,16 @@ body {
 .presentation {
   background: url("https://pedantic-kalam-be18d0.netlify.app/images/movie-clapper.jpg");
   background-size: cover;
+  width: 100vw;
   min-height: 500px;
-  margin: auto;
+  margin: 0;
   position: relative;
 }
 
 .pres {
-  max-width: 400px;
+  width: 400px;
   position: absolute;
+  margin-left: 60px;
   right: 300px;
   top: 70px;
 }
@@ -810,6 +811,7 @@ body {
 }
 
 .new-titles-movie {
+  margin: 0px;
   position: sticky;
   background-color: #373736;
   box-shadow: 0px 3px 10px #000000;
@@ -878,6 +880,8 @@ body {
 
 .categories {
   background-color: #373736;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #section-categories {
@@ -1820,11 +1824,234 @@ input[type="checkbox"] + label {
 
 /* MEDIA QUIERIES */
 
-@media only screen and (max-width: 600px) {
-  header {
-    max-width: 600px;
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 100vw;
+    height: 350px;
   }
+  #new-1,
+  #new-2,
+  #new-3,
+  #new-4 {
+    width: 220px;
+    height: 160px;
+  }
+  #title {
+    padding-top: 51%;
+  }
+  #title2 {
+    padding-top: 40%;
+  }
+  .pres {
+    width: 300px;
+    position: absolute;
+    right: 150px;
+  }
+  .icon-link {
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100vw;
+    height: 280px;
+  }
+
+  .featured__headings h2 {
+    font-size: 2.8rem;
+  }
+  .featured__headings h1 {
+    font-size: 1.5rem;
+  }
+
+  .featured__headings h3 {
+    font-size: 1.6rem;
+  }
+
+  .new {
+    display: grid;
+    margin: 0px;
+    grid-template-areas:
+      "news news"
+      "new-1 new-2"
+      "new-3 new-4";
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+  #new-1,
+  #new-2,
+  #new-3,
+  #new-4 {
+    width: 260px;
+    height: 159px;
+  }
+
+  .new-titles {
+    height: 450px;
+  }
+  #title {
+    padding-top: 43%;
+  }
+  #title2 {
+    padding-top: 34%;
+  }
+  .pres {
+    width: 300px;
+    position: absolute;
+    right: 80px;
+  }
+
+  .new-titles-movie {
+    height: 1000px;
+  }
+
   footer {
-    max-width: 600px;
+    padding-top: 30px;
+    margin: 0px;
+  }
+  .footer-group {
+    margin: 0px;
+  }
+  .icon-link {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .logo__wrap {
+    height: 50px;
+    width: 100vw;
+  }
+
+  header {
+    display: block;
+    margin: 0px;
+  }
+
+  header li {
+    position: relative;
+    right: 183px;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    display: inline;
+    position: relative;
+    right: 183px;
+    margin-right: 10px;
+  }
+
+  #signup-background {
+    position: relative;
+    right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 200px;
+  }
+
+  .presentation {
+    background: url("/images/presentation-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .pres {
+    width: 300px;
+    position: absolute;
+    right: 80px;
+  }
+  .footer-group {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo__wrap {
+    height: 50px;
+    width: 100vw;
+  }
+
+  header li {
+    position: relative;
+    right: 183px;
+    margin-right: 10px;
+  }
+
+  .nav-link {
+    display: inline;
+    position: relative;
+    right: 183px;
+    margin-right: 10px;
+  }
+
+  #signup-background {
+    display: none;
+  }
+
+  .container {
+    width: 100vw;
+    height: 150px;
+  }
+
+  .featured__headings h2 {
+    font-size: 2.5rem;
+  }
+  .featured__headings h1 {
+    font-size: 1.2rem;
+  }
+
+  .featured__headings h3 {
+    font-size: 1.3rem;
+  }
+
+  .new {
+    display: grid;
+    margin: 0px;
+    grid-template-areas:
+      "news"
+      "new-1"
+      "new-2"
+      "new-3"
+      "new-4";
+    row-gap: 15px;
+  }
+
+  .new-titles {
+    width: 100vw;
+    height: 800px;
+  }
+
+  .presentation {
+    background: url("/images/presentation-background.jpg");
+  }
+
+  .new-titles-movie {
+    height: 1680px;
+  }
+
+  .pres {
+    width: 300px;
+    position: absolute;
+    right: 50px;
+  }
+
+  .pres > h2 {
+    font-size: 2.1rem;
+  }
+
+  .footer-group {
+    margin: 0px;
+  }
+
+  .icon-link {
+    margin-top: 20px;
   }
 }
