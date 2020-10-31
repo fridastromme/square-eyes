@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | Home</title>
-    <meta name="description" content="The home of independently made films." />
+    <title>Square Eyes | Kate Mourey</title>
+    <meta name="description" content="Kate Mourey's producer profile on Square Eyes." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="forside.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
       <header>
@@ -27,16 +27,21 @@
   <li><a class="btn red" id="upload" href="sign-up.html">Upload movie</a></li>
     <section class="profile-one">
         <div class="prod-profile">
+          <div class="prod-profile__image">
                 <img src="images/kate-mourey.jpg" class="pic" alt="Profile picture of Kate Mourey."/>
+          </div>
+          <div class="prod-profile__user">
             <h1 id="blue">Kate Mourey</h1>
             <div class="user">
             <a href="#" class="small-link">@KitKat</a>
-            <h2>Producer</h2>
+            <img src="images/prod-profile-icon.png" class="prod-profile__icon"></span><h2 class="prod-profile__role">Producer</h2>
             </div>
+          </div>
             <div class="about">
             <p>In vel elit vitae tortor iaculis malesuada et sed enim. Sed purus arcu, scelerisque at metus sed, maximus aliquam lacus.</p>
             </div>
             <a class="btn bluer" href="#">Edit profile</a></li>
+            <div class="pord-profile__links">
             <ul>
                 <li><a href="#" class="dashlink">Dashboard</a></li>
                 <li><a href="#" class="dashlink">Messages</a></li>
@@ -47,6 +52,7 @@
                 <li><a href="#" class="dashlink">Discussion</a></li>
                 <li><a href="#" class="dashlink">Sign out</a></li>
             </ul>
+            </div>
         </div>
 <div class="prod-mymovies">
     <h2>My movies</h2>
@@ -113,10 +119,12 @@
         <img src="/images/views-icon.png" alt="Views on your projects." class="setting-icon">
     <a href="#">Views</a>
   </div>
+  <span class="settings__vl"></span>
   <div id="likes">
     <img src="/images/heart-icon2.png" alt="Likes on your projects." class="setting-icon">
     <a href="#">Likes</a>
   </div>
+  <span class="settings__vl"></span>
   <div id="comments">
     <img src="/images/comment-icon.png" alt="Comments on your projects." class="setting-icon">
     <a href="#">Comments</a>

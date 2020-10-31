@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | Home</title>
-    <meta name="description" content="The home of independently made films." />
+    <title>Square Eyes | Marcus Marshall</title>
+    <meta name="description" content="Marcus Marshall's viewer profile on Square Eyes." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="forside.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
       <header>
@@ -16,9 +16,15 @@
             /></a>
             <nav>
                 <ul>
-                      <li><a href="forside.html">Home</a></li>
-                      <li><a href="filmside.html">Movies</a></li>
-                      <li><a href="soek-home.html">Search</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="movies.html">Movies</a></li>
+                      <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
+                      ><a class="nav-link">Search</a></label>
+                      <div class="overlay-box__search">
+                        <h1>Search titles</h1>
+                        <input type="text" placeholder="Search">
+                        <a href="search-suggestions.html"><span class="icon__search"></span></a>
+                      </div>
                       <li><a href="sign-up.html" class="active">My profile</a></li>
                   </ul>
             </nav>
@@ -26,16 +32,22 @@
 <main class="view-back">
     <section class="profile-two">
         <div class="view-profile">
+          <div class="prod-profile__image">
                 <img src="images/marcus-marshall.jpeg" class="pic" alt="Profile picture of Kate Mourey."/>
+            </div>
+            <div class="view-profile__user">
             <h1 id="red">Marcus Marshall</h1>
             <div class="user">
             <h2><a href="#" class="small-link2">@Mmarshall</a></h2>
-            <h2>Viewer</h2>
+            <img src="images/view-profile-icon.png" class="prod-profile__icon-viewer"></span>
+            <h2 class="prod-profile__role">Viewer</h2>
+          </div>
             </div>
-            <div class="about">
+            <div class="view-profile__about">
             <p>In vel elit vitae tortor iaculis malesuada et sed enim. Sed purus arcu, scelerisque at metus sed, maximus aliquam lacus.</p>
         </div>
             <a class="btn red__round" href="#">Edit profile</a></li>
+            <div class="pord-profile__links">
             <ul>
                 <li><a href="#" class="dashlink2">Dashboard</a></li>
                 <li><a href="#" class="dashlink2">Messages</a></li>
@@ -44,6 +56,7 @@
                 <li><a href="#" class="dashlink2">Discussion</a></li>
                 <li><a href="#" class="dashlink2">Sign out</a></li>
             </ul>
+            </div>
         </div>
     <div class="view-mylibrary">
 <h2>My library</h2>

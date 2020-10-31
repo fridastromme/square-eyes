@@ -7,35 +7,56 @@
       content="Create your producer account and get started today."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
+  <header class="sign-up__header">
+    <a href="index.html"
+    ><img
+      src="images/logo-white.png"
+      class="logo"
+      alt="Website logo"
+  /></a>
+  </header>
   <body id="createprod"></body>
-</html>
 <main>
   <section>
+    <div class="sign-up__back">
     <a href="index.html" id="back">Go back</a>
+    </div>
     <div class="white-box">
       <div class="form">
+        <div class="sign-up__icon"></div>
+        <div class="sign-up__text">
         <h1>Create your producer account</h1>
         <p>
           Join other independent producers in our community and make money from
-          your creations. <a href="#">Learn more</a>
+          your creations. <a href="#" id="sign-up__terms">Learn more</a>
         </p>
+        </div>
         <fieldset>
         <form action="submit.php" method="POST">
+          <div class="sign-up__input">
           <legend>Your email</legend>
           <input type="email" name="email"/>
           <legend>Your password</legend>
           <input type="password" name="password"/>
           <legend>Re-enter password</legend>
           <input type="password" name="password-reenter"/>
+        </div>
+        <div class="sign-up__checkbox">
         <input type="checkbox" name="recommendations" value="recommendations" id="recommendations"><label for="recommendations">Please send me news and recommendations via email.</label>
-        <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the <a href="#">terms of use</a></label>
+        </div>
+        <div class="sign-up__checkbox">
+        <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the <a href="#" id="sign-up__terms">terms of use</a>.</label>
+        </div>
+
       </div>
     </fieldset>
-      <input type="submit" value="Sign up now">
+    <div class="sign-up__button">
+    <a class="btn bluer" href="producer-profile.html">Sign up now</a></li>
+    </div>
       </form>
-      <a href="producer-profile.html">Temporary link: producer profile</a>
     </div>
   </section>
 </main>
+</html>
