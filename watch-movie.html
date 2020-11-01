@@ -7,58 +7,60 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body class="watch-movie__body">
-      <header>
-        <div class="logo__wrap">
-            <a href="index.html"
-              ><img
-                src="images/squareeyes_logo.png"
-                class="logo"
-                alt="Website logo"
-            /></a>
-        </div>
-            <nav>
-              <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html" class="active">Movies</a></li>
-                    <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
-                    ><a class="nav-link">Search</a></label>
-                    <div class="overlay-box__search">
-                      <h1>Search titles</h1>
-                      <input type="text" placeholder="Search">
-                      <a href="search-suggestions.html"><span class="icon__search"></span></a>
+    <header>
+      <div class="logo__wrap">
+          <a href="index.html"
+            ><img
+              src="images/squareeyes_logo.png"
+              class="logo"
+              alt="Website logo"
+          /></a>
+      </div>
+          <nav>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="movies.html" class="active">Movies</a></li>
+                  <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
+                  ><a class="nav-link">Search</a></label>
+                  <div class="overlay-box__search">
+                    <h1>Search titles</h1>
+                    <input type="text" placeholder="Search">
+                    <a href="search-suggestions.html"><span class="icon__search"></span></a>
+                  </div>
+                  <input type="checkbox" id="overlay-box"/><label for="overlay-box"
+                  ><a class="nav-link">Sign in</a></label>
+                  <div class="overlay-box__signin">
+                    <h1>Sign in to your account</h1>
+                    <div class="form">
+                    <fieldset>
+                    <form action="submit.php" method="POST">
+                      <legend>Your email</legend>
+                      <input type="email" name="email"/>
+                      <legend>Your password</legend>
+                      <input type="password" name="password"/>
+                  </div>
+                </fieldset>
+                <div class="form__signin">
+                  <a class="btn red__round" href="producer-profile.html">Sign in</a></li>
+                </div>
+                <div class="forgot">
+                <a href="#">Forgot your password?</a>
+                </div>
+                  </form>
+            </div>
+                </div>
+                <input type="checkbox" id="overlay-box__3"/><label for="overlay-box__3"
+                ><a class="nav-link__small">Sign up</a></label>
+                  <input type="checkbox" id="overlay-box__3"/><label for="overlay-box__3"
+                  ><a class="nav-link__white"><span id="signup-background"><span id="signup-hover">Sign up</span></span></a></label>
+                  <div class="overlay-box__signup">
+                    <h1>Who are you?</h1>
+                    <a href="create-producer-account.html"> <button class="btn blue__round">Producer</button></a>
+                    <a href="create-viewer-account.html"> <button class="btn red__round">Viewer</button></a>
                     </div>
-                    <input type="checkbox" id="overlay-box"/><label for="overlay-box"
-                    ><a class="nav-link">Sign in</a></label>
-                    <div class="overlay-box__signin">
-                      <h1>Sign in to your account</h1>
-                      <div class="form">
-                      <fieldset>
-                      <form action="submit.php" method="POST">
-                        <legend>Your email</legend>
-                        <input type="email" name="email"/>
-                        <legend>Your password</legend>
-                        <input type="password" name="password"/>
-                    </div>
-                  </fieldset>
-                  <div class="form__signin">
-                    <a class="btn red__round" href="producer-profile.html">Sign in</a></li>
-                  </div>
-                  <div class="forgot">
-                  <a href="#">Forgot your password?</a>
-                  </div>
-                    </form>
-              </div>
-                  </div>
-                    <input type="checkbox" id="overlay-box__3"/><label for="overlay-box__3"
-                    ><a class="nav-link__white"><span id="signup-background"><span id="signup-hover">Sign up</span></span></a></label>
-                    <div class="overlay-box__signup">
-                      <h1>Who are you?</h1>
-                      <a href="create-producer-account.html"> <button class="btn blue__round">Producer</button></a>
-                      <a href="create-viewer-account.html"> <button class="btn red__round">Viewer</button></a>
-                      </div>
-                </ul>
-          </nav>
-            </header>
+              </ul>
+        </nav>
+          </header>
             <main>
                 <section class="watch-movie">
                     <div class="watch-movie__video">
