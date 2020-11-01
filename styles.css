@@ -2250,8 +2250,8 @@ input[type="checkbox"] + label {
     margin-bottom: -15px;
   }
 
-  input[type="email"],
-  input[type="password"] {
+  .overlay-box__signin > input[type="email"],
+  .overlay-box__signin > input[type="password"] {
     width: 170px;
     height: 30px;
     margin-bottom: 7px;
@@ -2405,13 +2405,6 @@ input[type="checkbox"] + label {
     .form__signin .red__round {
       margin-top: -15px;
       margin-bottom: -15px;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-      width: 170px;
-      height: 30px;
-      margin-bottom: 7px;
     }
 
     /* profiles for mobile */
