@@ -8,20 +8,32 @@
   </head>
   <body>
       <header>
+        <div class="logo__wrap">
             <a href="index.html"
               ><img
                 src="images/squareeyes_logo.png"
                 class="logo"
                 alt="Website logo"
             /></a>
+        </div>
+        <div class="nav-profile">
             <nav>
-                <ul>
-                      <li><a href="forside.html">Home</a></li>
-                      <li><a href="filmside.html">Movies</a></li>
-                      <li><a href="soek-home.html">Search</a></li>
-                      <li><a href="sign-up.html" class="active">My profile</a></li>
-                  </ul>
-            </nav>
+              <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
+                    ><a class="nav-link">Search</a></label>
+                    <div class="overlay-box__search">
+                      <h1>Search titles</h1>
+                      <input type="text" placeholder="Search">
+                      <a href="search-suggestions.html"><span class="icon__search"></span></a>
+                    </div>
+                        <li><a href="producer-profile.html" class="active">My profile</a></li>
+                    </div>
+                  </fieldset>
+                </ul>
+          </nav>
+        </div>
             </header>
 <main class="prod-back">
   <li><a class="btn red" id="upload" href="sign-up.html">Upload movie</a></li>
@@ -73,9 +85,9 @@
     <div class="prod-mylibrary">
 <h2>My library</h2>
 <div id="new-2">
-              <h3><a href="movies.html" id="title-profile">Preys</a></h3>
+              <h3><a href="movies.html" id="title-profile-2">Preys</a></h3>
               <h4>
-                <a href="movies.html" id="creator-profile">By Sara Salomonsson</a>
+                <a href="movies.html" id="creator-profile-2">By Sara Salomonsson</a>
               </h4>
 </div>
               <a href="#" id="view-link">View all</a>
@@ -83,8 +95,8 @@
     <div class="prod-likedmovies">
 <h2>Liked movies</h2>
 <div id="new-4">
-              <h3><a href="movies.html" id="title-profile">Fire Job</a></h3>
-              <h4><a href="movies.html" id="creator-profile">By Susan Kim</a></h4>
+              <h3><a href="movies.html" id="title-profile-2">Fire Job</a></h3>
+              <h4><a href="movies.html" id="creator-profile-2">By Susan Kim</a></h4>
               <div id="heart"><img src="images/heart-icon.png"></div>
 </div>
               <a href="#" id="view-link">View all</a>

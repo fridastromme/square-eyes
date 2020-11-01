@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body class="movie-page">
+  <body>
       <header>
+        <div class="logo__wrap">
             <a href="index.html"
               ><img
                 src="images/squareeyes_logo.png"
                 class="logo"
                 alt="Website logo"
             /></a>
+        </div>
             <nav>
               <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
                     <input type="checkbox" id="overlay-box__2"/><label for="overlay-box__2"
                     ><a class="nav-link">Search</a></label>
                     <div class="overlay-box__search">
@@ -39,7 +41,7 @@
                     </div>
                   </fieldset>
                   <div class="form__signin">
-                  <a href="producer-profile.html"> <button class="btn red__round">Sign in</button></a>
+                    <a class="btn red__round" href="producer-profile.html">Sign in</a></li>
                   </div>
                   <div class="forgot">
                   <a href="#">Forgot your password?</a>
@@ -71,179 +73,181 @@
  <span class="movie-info__price"><h5>$3</h5></span><span class="movie-info__help"><img src="images/help.png" alt="Help"></span>
  <a class="btn pink" href="watch-movie.html">Watch now</a>
  </div>
-                <section>
-                    <section class="featured-movie">
-                        <div class="container-movie">
-                            <a href="movie-info-movies.html">
-              <h1>Featured:</h1>
-              <h2>Of The Forest</h2>
-              <h3>By Lucy Thompson</h3></a>
+ <section>
+    <section class="featured-movie">
+        <div class="container-movie">
+            <a href="movie-info-movies.html">
+              <div class="featured__headings">
+<h1>Featured:</h1>
+<h2>Of The Forest</h2>
+<h3>By Lucy Thompson</h3></a>
+</div>
+        </div>
+    </section>
+</section>
+<section class="new-titles-movie">
+    <h2 id="movie-news">New titles:</h2>
+    <div class="new">
+    <div id="new-1">
+    <a href="movies.html"><h3 id="title">Kicking The Fog</h3>
+      <h4 id="creator">By Alexander Tolstoj</h4></a>
+      </div>
+      <div id="new-2">
+        <a href="movies.html"><h3 id="title">Preys</h3>
+          <h4 id="creator">By Sara Salomonsson</h4></a>
+          </div>
+          <div id="new-3">
+            <a href="movies.html"><h3 id="title2">Hunters From Outer Space</h3>
+              <h4 id="creator2">By Eric Armstrong</h4></a>
+              </div>
+              <div id="new-4">
+                <a href="movies.html"><h3 id="title">Fire Job</h3>
+                  <h4 id="creator">By Susan Kim</h4></a>
+                  </div>
+                  <a href="movies.html" id="view-all-movie">View all</a>
+                  </div>
+                  <h2 id="movie-news">Popular:</h2>
+                  <div class="new">
+                  <div id="pop-1">
+                  <a href="movies.html"><h3 id="title">Friends Of The Universe</h3>
+                    <h4 id="creator">By Name Name</h4></a>
+                    </div>
+                    <div id="pop-2">
+                      <a href="movies.html"><h3 id="title">Loss Of Robots</h3>
+                        <h4 id="creator">By Name Name</h4></a>
                         </div>
-                    </section>
+                        <div id="pop-3">
+                          <a href="movies.html"><h3 id="title">Precious Dreams</h3>
+                            <h4 id="creator">By Name Name and Name Name</h4></a>
+                            </div>
+                            <div id="pop-4">
+                              <a href="movies.html"><h3 id="title">Spiders With A Goal</h3>
+                                <h4 id="creator">By Name Name</h4></a>
+                                </div>
+                                <a href="movies.html" id="view-all-movie">View all</a>
+                                </div>
                 </section>
-                <section class="new-titles-movie">
-                    <h2 id="movie-news">New titles:</h2>
-                    <div class="new">
-                    <div id="new-1">
-                    <a href="movies.html"><h3 id="title">Kicking The Fog</h3>
-                      <h4 id="creator">By Alexander Tolstoj</h4></a>
-                      </div>
-                      <div id="new-2">
-                        <a href="movies.html"><h3 id="title">Preys</h3>
-                          <h4 id="creator">By Sara Salomonsson</h4></a>
-                          </div>
-                          <div id="new-3">
-                            <a href="movies.html"><h3 id="title2">Hunters From Outer Space</h3>
-                              <h4 id="creator2">By Eric Armstrong</h4></a>
-                              </div>
-                              <div id="new-4">
-                                <a href="movies.html"><h3 id="title">Fire Job</h3>
-                                  <h4 id="creator">By Susan Kim</h4></a>
-                                  </div>
-                                  <a href="movies.html" id="view-all-movie">View all</a>
-                                  </div>
-                                  <h2 id="movie-news">Popular:</h2>
-                                  <div class="new">
-                                  <div id="pop-1">
-                                  <a href="movies.html"><h3 id="title">Friends Of The Universe</h3>
-                                    <h4 id="creator">By Name Name</h4></a>
-                                    </div>
-                                    <div id="pop-2">
-                                      <a href="movies.html"><h3 id="title">Loss Of Robots</h3>
-                                        <h4 id="creator">By Name Name</h4></a>
-                                        </div>
-                                        <div id="pop-3">
-                                          <a href="movies.html"><h3 id="title">Precious Dreams</h3>
-                                            <h4 id="creator">By Name Name and Name Name</h4></a>
-                                            </div>
-                                            <div id="pop-4">
-                                              <a href="movies.html"><h3 id="title">Spiders With A Goal</h3>
-                                                <h4 id="creator">By Name Name</h4></a>
-                                                </div>
-                                                <a href="movies.html" id="view-all-movie">View all</a>
-                                                </div>
-                                </section>
-                                <section class="categories">
-                                    <div id="section-categories">
-                                    <h2 id="header-cat">Categories</h2>
-                                    <h3 class="categories-title">Action:</h3>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Animation:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Comedy:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Documentary:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Drama:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Romance:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Sci-fi:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    <h2 class="categories-title">Thriller:</h2>
-                                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
-                                    <a href="movies.html" id="view-all-movie2">View all</a>
-                                    </div>
-                                  </section>
-            </main>
-            <footer>
-                <nav>
-                    <ul>
-                      <div class="footer-group">
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Privacy policy</a></li>
+                <section class="categories">
+                    <div id="section-categories">
+                    <h2 id="header-cat">Categories</h2>
+                    <h3 class="categories-title">Action:</h3>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Animation:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Comedy:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Documentary:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Drama:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Romance:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Sci-fi:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
+                    <h2 class="categories-title">Thriller:</h2>
+                    <div class="categories-title__movie" id="round-one"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <div class="categories-title__movie" id="round-two"><h4>Movie title</h4><h5>By Name Name</h5></div>
+                    <a href="movies.html" id="view-all-movie2">View all</a>
                     </div>
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Cookie settings</a></li>
-                    </div>
-                  </div>
-                  <div class="footer-group">
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Gift card</a></li>
-                    </div>
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Jobs</a></li>
-                    </div>
-                  </div>
-                  <div class="footer-group">
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Subtitles</a></li>
-                    </div>
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Terms of use</a></li>
-                    </div>
-                  </div>
-                  <div class="footer-group">
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">About us</a></li>
-                    </div>
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Contact us</a></li>
-                    </div>
-                  </div>
-                  <div class="footer-group">
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Create account</a></li>
-                    </div>
-                      <div class="footer-link">
-                      <li><a href="#" id="ft-link">Sign in</a></li>
-                    </div>
-                  </div>
-                  <div class="footer-group">
-                    <div class="icon-link">
-                      <li><a href="#"><img src="images/facebook-circular-logo.png" class="facebook" alt="Go to our Facebook page"/></a>
-                    </div>
-                    <div class="icon-link">
-                      <li><a href="#"><img src="images/instagram-logo.png" class="instagram" alt="Go to our Instagram page"/></a>
-                    </div>
-                    <div class="icon-link">
-                      <li><a href="#"><img src="images/youtube.png" class="youtube" alt="Go to our Youtube page"/></a>
-                    </div>
-                    <div class="icon-link">
-                      <li><a href="#"><img src="images/twitter-icon.png" class="twitter" alt="Go to our Twitter page"/></a>
-                    </div>
-                    </div>
-                    </ul>
-                  </nav>
-            </footer>
-            </body>
-            </html>
+                  </section>
+</main>
+<footer>
+<nav>
+    <ul>
+      <div class="footer-group">
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Privacy policy</a></li>
+    </div>
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Cookie settings</a></li>
+    </div>
+  </div>
+  <div class="footer-group">
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Gift card</a></li>
+    </div>
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Jobs</a></li>
+    </div>
+  </div>
+  <div class="footer-group">
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Subtitles</a></li>
+    </div>
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Terms of use</a></li>
+    </div>
+  </div>
+  <div class="footer-group">
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">About us</a></li>
+    </div>
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Contact us</a></li>
+    </div>
+  </div>
+  <div class="footer-group">
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Create account</a></li>
+    </div>
+      <div class="footer-link">
+      <li><a href="#" id="ft-link">Sign in</a></li>
+    </div>
+  </div>
+  <div class="footer-group">
+    <div class="icon-link">
+      <li><a href="#"><img src="images/facebook-circular-logo.png" class="facebook" alt="Go to our Facebook page"/></a>
+    </div>
+    <div class="icon-link">
+      <li><a href="#"><img src="images/instagram-logo.png" class="instagram" alt="Go to our Instagram page"/></a>
+    </div>
+    <div class="icon-link">
+      <li><a href="#"><img src="images/youtube.png" class="youtube" alt="Go to our Youtube page"/></a>
+    </div>
+    <div class="icon-link">
+      <li><a href="#"><img src="images/twitter-icon.png" class="twitter" alt="Go to our Twitter page"/></a>
+    </div>
+    </div>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>

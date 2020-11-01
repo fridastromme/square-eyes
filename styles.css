@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
 }
 
 body {
@@ -244,17 +245,25 @@ li {
 
 header {
   display: grid;
+  box-sizing: border-box;
   background-color: white;
   box-shadow: 0px 3px 10px #373736;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
-  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: right;
   grid-template-areas: "logo nav-li";
   position: sticky;
   z-index: 2;
+}
+
+#createprod .logo {
+  margin-bottom: 20px;
+}
+
+#createview .logo {
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -646,7 +655,6 @@ body {
 }
 
 .new {
-  width: 100vw;
   display: grid;
   padding: 0px;
   grid-template-areas:
@@ -898,6 +906,12 @@ body {
   margin-bottom: 10px;
 }
 
+#view-all-white {
+  position: relative;
+  bottom: 20px;
+  color: white;
+}
+
 .categories-title__movie {
   display: inline-block;
   width: 250px;
@@ -958,40 +972,45 @@ h5 {
 
 .watch-movie {
   background-color: #373837;
-  height: 38vw;
+  height: 100%;
 }
 
 .watch-movie__video {
   position: relative;
-  background-image: url("images/of-the-forest-3.jpg");
-  background-repeat: no-repeat;
-  height: 617px;
   max-width: 1100px;
   margin: auto;
   filter: drop-shadow(0px 3px 10px #292929);
   z-index: 1;
 }
 
-.watch-movie__video > h1,
-.watch-movie__video > h2 {
-  position: relative;
+.watch-movie__headings {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  z-index: 200;
+}
+
+.watch-movie__headings > h1,
+.watch-movie__headings > h2 {
   color: white;
   text-shadow: 0px 6px 20px #000000;
-  top: 20px;
-  left: 20px;
 }
 
 .watch-movie__play {
-  position: relative;
-  top: 150px;
+  background-image: url("images/play.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 40%;
   width: 200px;
-  margin: auto;
-}
-
-.watch-movie__play-button {
-  width: 170px;
+  height: 80px;
   filter: drop-shadow(0px 3px 20px #000000);
   cursor: pointer;
+}
+
+.watch-movie__play:hover {
+  background-image: url("images/play-pink.png");
 }
 
 /* SEARCH */
@@ -1080,6 +1099,7 @@ input[type="password"] {
   height: 35px;
   background-color: #ffa987;
   border: none;
+  padding-left: 15px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -1126,7 +1146,7 @@ legend {
   grid-row-gap: 1em;
   grid-auto-rows: minmax(100px, auto);
   grid-template-columns: 3fr 1.5fr 1.5fr 2fr;
-  grid-template-rows: 3fr 2fr 1.5fr 1.5 3fr;
+  grid-template-rows: auto;
 }
 
 .prod-profile {
@@ -1339,7 +1359,8 @@ legend {
   left: 7px;
 }
 
-#title-profile {
+#title-profile,
+#title-profile-2 {
   position: relative;
   top: 117px;
   font-size: 1.2rem;
@@ -1348,7 +1369,8 @@ legend {
   text-shadow: 0px 5px 20px #000000;
 }
 
-#creator-profile {
+#creator-profile,
+#creator-profile-2 {
   position: relative;
   top: 110px;
   font-size: 0.8rem;
@@ -1358,7 +1380,9 @@ legend {
 }
 
 #title-profile:hover,
-#creator-profile:hover {
+#creator-profile:hover,
+#title-profile-2:hover,
+#creator-profile-2:hover {
   color: #ffa987;
 }
 
@@ -1540,7 +1564,7 @@ legend {
   margin-bottom: 15px;
 }
 
-#title-profile__hunters {
+#title-profile__hunters-2 {
   position: relative;
   padding-left: 12px;
   top: 102px;
@@ -1550,7 +1574,7 @@ legend {
   margin-bottom: 2px;
 }
 
-#creator-profile__hunters {
+#creator-profile__hunters-2 {
   position: relative;
   padding-left: 12px;
   top: 102px;
@@ -1559,8 +1583,8 @@ legend {
   text-shadow: 0px 5px 15px #000000;
 }
 
-#title-profile__hunters:hover,
-#creator-profile__hunters:hover {
+#title-profile__hunters-2:hover,
+#creator-profile__hunter-2s:hover {
   color: #ffa987;
 }
 
@@ -1850,6 +1874,26 @@ input[type="checkbox"] + label {
   .icon-link {
     margin-top: -40px;
   }
+  .sign-up__back {
+    text-align: right;
+  }
+  .overlay-box__signup {
+    position: absolute;
+    left: 240px;
+  }
+  .overlay-box__signup__bottom {
+    position: absolute;
+    left: 600px;
+  }
+  .overlay-box__search,
+  .overlay-box__search-suggestions {
+    position: absolute;
+    left: 230px;
+  }
+  .overlay-box__signin {
+    position: absolute;
+    left: 400px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1917,6 +1961,41 @@ input[type="checkbox"] + label {
   .icon-link {
     margin-top: 0px;
   }
+  .sign-up__back {
+    text-align: right;
+    margin-right: 90px;
+  }
+  .overlay-box__signup {
+    position: absolute;
+    padding: 50px;
+    left: 150px;
+  }
+  .overlay-box__signup__bottom {
+    position: absolute;
+    left: 700px;
+    padding: 60px;
+  }
+  .overlay-box__search,
+  .overlay-box__search-suggestions {
+    position: absolute;
+    left: 100px;
+    padding: 50px;
+    width: 480px;
+  }
+  .search-suggestions__grid {
+    display: grid;
+    margin-top: 10px;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .overlay-box__signin {
+    position: absolute;
+    left: 200px;
+    padding: 40px;
+    margin-top: 28px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1928,24 +2007,24 @@ input[type="checkbox"] + label {
   header {
     display: block;
     margin: 0px;
+    width: 100vw;
   }
 
   header li {
     position: relative;
-    right: 183px;
+    right: 145px;
     margin-right: 10px;
   }
 
   .nav-link {
     display: inline;
     position: relative;
-    right: 183px;
-    margin-right: 10px;
+    right: 147px;
   }
 
   #signup-background {
     position: relative;
-    right: 100px;
+    right: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
@@ -1971,9 +2050,54 @@ input[type="checkbox"] + label {
   .footer-group {
     margin: 0px;
   }
+  .white-box {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .sign-up__back {
+    text-align: right;
+    margin-right: 90px;
+  }
+  .overlay-box__signup {
+    position: absolute;
+    padding: 30px;
+    left: 100px;
+  }
+  .overlay-box__signup__bottom {
+    position: absolute;
+    left: 900px;
+    padding: 60px;
+  }
+  .overlay-box__search,
+  .overlay-box__search-suggestions {
+    position: absolute;
+    left: 100px;
+    margin-top: 30px;
+    padding: 40px;
+    width: 300px;
+  }
+  input[type="text"] {
+    width: 200px;
+  }
+  .overlay-box__signin {
+    position: absolute;
+    left: 100px;
+    padding: 30px;
+    margin-top: -45px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .nav-profile li,
+  .nav-profile .nav-link {
+    float: left;
+  }
+
+  .nav-profile .nav-link {
+    position: relative;
+    top: 22px;
+  }
+
   .logo__wrap {
     height: 50px;
     width: 100vw;
@@ -1981,15 +2105,15 @@ input[type="checkbox"] + label {
 
   header li {
     position: relative;
-    right: 183px;
+    right: 145px;
     margin-right: 10px;
   }
 
   .nav-link {
     display: inline;
     position: relative;
-    right: 183px;
-    margin-right: 10px;
+    right: 145px;
+    margin-right: 6px;
   }
 
   #signup-background {
@@ -2010,6 +2134,18 @@ input[type="checkbox"] + label {
 
   .featured__headings h3 {
     font-size: 1.3rem;
+  }
+
+  .new {
+    display: grid;
+    margin: 0px;
+    grid-template-areas:
+      "news"
+      "new-1"
+      "new-2"
+      "new-3"
+      "new-4";
+    row-gap: 15px;
   }
 
   .new {
@@ -2054,4 +2190,141 @@ input[type="checkbox"] + label {
   .icon-link {
     margin-top: 20px;
   }
+  .white-box {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .sign-up__back {
+    text-align: right;
+    margin-right: 90px;
+  }
+  .overlay-box__signup__bottom {
+    position: absolute;
+    left: 980px;
+    bottom: 100px;
+    padding: 40px;
+  }
+  .overlay-box__signin {
+    position: absolute;
+    left: 40px;
+    padding: 30px;
+    margin-top: -100px;
+  }
+
+  .prod-profile {
+    margin-top: 130px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-radius: 50px 50px 10px 10px !important;
+  }
+
+  #upload {
+    position: relative;
+    left: 165px;
+    top: 65px;
+  }
+
+  .prod-mymovies {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin-top: 7px;
+  }
+  .prod-mylibrary {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    margin-top: 7px;
+  }
+
+  .prod-likedmovies {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin-top: 10px;
+  }
+  .prod-discussion {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    margin-top: 7px;
+  }
+  .settings {
+    grid-column: 1/5;
+    grid-row: 6/7;
+    margin-top: 7px;
+  }
+
+  #title-profile-2 {
+    top: 98px;
+  }
+
+  #creator-profile-2 {
+    top: 91px;
+  }
+
+  .view-profile {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    border-radius: 50px 50px 10px 10px !important;
+  }
+  .view-mylibrary {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    margin-top: 7px;
+  }
+  .view-likedmovies {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin-top: 7px;
+  }
+  .view-discussion {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    margin-top: 7px;
+  }
+  #title-profile__hunters-2 {
+    position: relative;
+    padding-left: 12px;
+    top: 86px;
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 0px 5px 15px #000000;
+    margin-bottom: 2px;
+  }
+
+  #creator-profile__hunters-2 {
+    position: relative;
+    padding-left: 12px;
+    top: 87px;
+    color: white;
+    font-size: 0.8rem;
+    text-shadow: 0px 5px 15px #000000;
+  }
+
+  #heart__hunters {
+    position: relative;
+    top: -166px;
+  }
 }
+
+/* .view-profile {
+  margin-top: 60px;
+  padding: 100px;
+  grid-column: 1/2;
+  border-radius: 50px 50px 10px 50px !important;
+}
+.view-mylibrary {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 2/3;
+}
+
+.view-likedmovies {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 3/4;
+}
+
+.view-discussion {
+  margin-top: 180px;
+  padding: 30px;
+  grid-column: 4/5;
+}
+*/
