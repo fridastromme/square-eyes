@@ -1908,12 +1908,14 @@ legend {
 
 #createprod {
   background-image: linear-gradient(#7b8576, #3141d4);
-  height: fit-content;
+  max-height: fit-content;
+  min-height: 100vh;
 }
 
 #createview {
   background-image: linear-gradient(#ffa987, #ff5d1c);
-  height: fit-content;
+  max-height: fit-content;
+  min-height: 100vh;
 }
 
 #viewer-icon {
