@@ -66,6 +66,13 @@ li {
   margin-right: 40px;
 }
 
+.nav-link__small {
+  display: none;
+  position: relative;
+  right: 145px;
+  margin-right: 6px;
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
@@ -232,6 +239,7 @@ li {
 #overlay-box__3,
 #overlay-box__4 {
   display: none;
+  width: 0;
 }
 
 #overlay-box:checked ~ .overlay-box__signin,
@@ -653,7 +661,7 @@ body {
 
 .new-titles {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   background-color: white;
   box-shadow: 0px 3px 10px #373736;
   height: 280px;
@@ -667,12 +675,12 @@ body {
   margin-bottom: 10px;
 }
 
-.view-all-movies {
+/*.view-all-movies {
   position: relative;
   float: right;
   margin-right: 30px;
   margin-top: 10px;
-}
+}*/
 
 .new {
   display: grid;
@@ -722,9 +730,10 @@ body {
 #title {
   position: relative;
   padding-top: 46%;
+  line-break: normal;
   padding-left: 12px;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-shadow: 0px 5px 15px #000000;
   margin-bottom: 2px;
 }
@@ -733,7 +742,7 @@ body {
   position: relative;
   padding-left: 12px;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-shadow: 0px 5px 15px #000000;
 }
 
@@ -855,16 +864,17 @@ body {
 
 #movie-news {
   color: white;
-  padding-left: 30px;
+  padding-top: 40px;
+  padding-left: 25px;
   margin-bottom: 10px;
 }
 
-#view-all-movie {
+/*#view-all-movie {
   color: white;
   position: relative;
   left: 1102px;
   margin-top: 10px;
-}
+}*/
 
 #view-all-movie:hover {
   color: #ffa987;
@@ -926,20 +936,43 @@ body {
   margin-bottom: 10px;
 }
 
+#view-all {
+  position: relative;
+  float: right;
+  top: 30px;
+}
+
 #view-all-white {
   position: relative;
-  bottom: 20px;
+  float: right;
+  top: 30px;
   color: white;
+}
+
+#view-all-white__2 {
+  position: relative;
+  float: right;
+  top: 120px;
+  color: white;
+}
+
+#view-all-white:hover,
+#view-all-white__2:hover {
+  color: #ffa987;
 }
 
 .categories-title__movie {
   display: inline-block;
-  width: 250px;
   height: 150px;
   background-image: linear-gradient(-130deg, #7b8576, #000000);
   background-repeat: no-repeat;
   margin-bottom: 25px;
   margin-left: -3px;
+  width: 240px;
+}
+
+.categories-title__row {
+  margin-bottom: 20px;
 }
 
 #header-cat {
@@ -989,6 +1022,11 @@ h5 {
 }
 
 /* WATCH MOVIE PAGE */
+
+.watch-movie__body {
+  height: 100vh;
+  background-color: #373837;
+}
 
 .watch-movie {
   background-color: #373837;
@@ -1142,7 +1180,7 @@ aside {
 
 input[type="text"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 400px;
+  max-width: 400px;
   height: 50px;
   background-color: #ffa987;
   border: none;
@@ -1213,14 +1251,16 @@ input[type="text"]:focus {
 /* SIGN IN */
 
 fieldset {
+  min-width: 0;
+  width: 100%;
   border: none;
 }
 
 input[type="email"],
 input[type="password"] {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: block;
-  width: 260px;
+  display: inline;
+  max-width: 100%;
   height: 35px;
   background-color: #ffa987;
   border: none;
@@ -1233,6 +1273,7 @@ legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   color: #373736;
+  width: 100%;
   margin-bottom: 5px;
 }
 
@@ -1244,14 +1285,14 @@ legend {
 
 .form {
   display: block;
+  width: 100%;
   text-align: center;
   margin-bottom: 15px;
 }
 
 .form > fieldset {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline;
+  max-width: 367px;
   text-align: left;
 }
 
@@ -1867,12 +1908,12 @@ legend {
 
 #createprod {
   background-image: linear-gradient(#7b8576, #3141d4);
-  height: 100vh;
+  height: fit-content;
 }
 
 #createview {
   background-image: linear-gradient(#ffa987, #ff5d1c);
-  height: 100vh;
+  height: fit-content;
 }
 
 #viewer-icon {
@@ -1886,11 +1927,13 @@ legend {
 .white-box {
   background-color: white;
   max-width: 700px;
-  height: 650px;
+  min-height: 650px;
   filter: drop-shadow(0px 3px 10px #373737);
   margin: auto;
   margin-top: 30px;
   padding-top: 20px;
+  padding: 10px 10px;
+  padding-bottom: 20px;
   border-radius: 10px 50px 50px 50px;
 }
 
@@ -1899,7 +1942,7 @@ legend {
 }
 
 .sign-up__text {
-  width: 367px;
+  max-width: 367px;
   margin: auto;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -1912,13 +1955,13 @@ legend {
 }
 
 .sign-up__input {
-  width: 380px;
+  width: 100%;
   margin: auto;
 }
 
 .sign-up__input > input {
   background-color: #889fca;
-  width: 380px;
+  width: 90%;
 }
 
 .sign-up__input > input:focus {
@@ -1928,7 +1971,8 @@ legend {
 
 .sign-up__input-2 > input {
   background-color: #fead8d;
-  width: 380px;
+  width: 90%;
+  margin: auto;
 }
 
 .sign-up__input-2 > input:focus {
@@ -1945,7 +1989,8 @@ input[type="checkbox"] + label {
 .sign-up__checkbox {
   display: block;
   margin: auto;
-  width: 380px;
+  min-width: 0;
+  width: 100%;
   margin-bottom: 6px;
 }
 
@@ -1981,10 +2026,15 @@ input[type="checkbox"] + label {
   #new-1,
   #new-2,
   #new-3,
-  #new-4 {
+  #new-4,
+  #pop-1,
+  #pop-2,
+  #pop-3,
+  #pop-4 {
     width: 220px;
     height: 160px;
   }
+
   #title {
     padding-top: 51%;
   }
@@ -2056,7 +2106,11 @@ input[type="checkbox"] + label {
   #new-1,
   #new-2,
   #new-3,
-  #new-4 {
+  #new-4,
+  #pop-1,
+  #pop-2,
+  #pop-3,
+  #pop-4 {
     width: 260px;
     height: 159px;
   }
@@ -2184,6 +2238,13 @@ input[type="checkbox"] + label {
     height: 200px;
   }
 
+  .container-movie h1,
+  .container-movie h2,
+  .container-movie h3 {
+    position: relative;
+    top: 160px;
+  }
+
   .presentation {
     background: url("/images/presentation-background.jpg");
     background-size: cover;
@@ -2223,9 +2284,6 @@ input[type="checkbox"] + label {
     margin-top: 30px;
     padding: 40px;
     width: 300px;
-  }
-  input[type="text"] {
-    width: 200px;
   }
 
   .overlay-box__signin {
@@ -2268,9 +2326,29 @@ input[type="checkbox"] + label {
   }
 
   @media only screen and (max-width: 600px) {
+    header {
+      padding-right: 0px;
+      padding-left: 5px;
+    }
+
+    .nav-link,
+    nav li {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
     .nav-profile li,
     .nav-profile .nav-link {
       float: left;
+    }
+
+    .nav-link__small {
+      display: inline;
+      font-size: 0.8rem;
+      position: absolute;
+      bottom: 12px;
+      right: 90px;
+      margin-right: 6px;
     }
 
     .nav-profile .nav-link {
@@ -2302,7 +2380,14 @@ input[type="checkbox"] + label {
 
     .container {
       width: 100vw;
-      height: 150px;
+      height: 100px;
+    }
+
+    .container-movie h1,
+    .container-movie h2,
+    .container-movie h3 {
+      position: relative;
+      top: 180px;
     }
 
     .featured__headings h2 {
@@ -2391,10 +2476,6 @@ input[type="checkbox"] + label {
       margin-top: 20px;
     }
 
-    .overlay-box__signin legend {
-      font-size: 0.9rem;
-    }
-
     .overlay-box__signin h1 {
       font-size: 1.2rem;
       text-align: center;
@@ -2404,6 +2485,18 @@ input[type="checkbox"] + label {
     .form__signin .red__round {
       margin-top: -15px;
       margin-bottom: -15px;
+    }
+
+    .white-box .bluer {
+      padding: 10px;
+    }
+
+    .white-box .red__round {
+      padding: 10px;
+    }
+
+    .white-box {
+      padding-bottom: 40px;
     }
 
     /* profiles for mobile */
@@ -2498,6 +2591,24 @@ input[type="checkbox"] + label {
     #heart__hunters {
       position: relative;
       top: -166px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .overlay-box__search {
+      width: 200px;
+      padding: 30px;
+    }
+    .overlay-box__signup {
+      width: 200px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+    .overlay-box__search-suggestions {
+      position: absolute;
+      left: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
