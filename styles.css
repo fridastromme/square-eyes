@@ -346,16 +346,36 @@ a:hover {
   box-shadow: 0px 3px 10px #373736;
 }
 
-.blue__round {
-  background-color: #3141d4;
-  border: 3px solid #3141d4;
-  border-radius: 25px;
-}
-
 .blue:hover {
   border-color: #134196;
   background-color: transparent;
   color: #134196;
+}
+
+.blue__light {
+  float: right;
+  border: 3px solid #3141d4;
+  background-color: #3141d4;
+  padding: 12px 38px;
+  color: white;
+  border-radius: 5px 25px 25px 25px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0px 3px 10px #262626;
+}
+
+.blue__light:hover {
+  color: #3141d4;
+  background-color: transparent;
+  border: 3px solid #3141d4;
+}
+
+.blue__round {
+  background-color: #3141d4;
+  border: 3px solid #3141d4;
+  border-radius: 25px;
 }
 
 .blue__round:hover {
@@ -1011,6 +1031,111 @@ h5 {
 
 .watch-movie__play:hover {
   background-image: url("images/play-pink.png");
+}
+
+/* PAY FOR MOVIE SITE */
+
+.pay-movie__main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".pay-movie aside";
+}
+
+.watch-movie__play-pay {
+  background-image: url("images/play.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 200px;
+  height: 80px;
+  filter: drop-shadow(0px 3px 20px #000000);
+  cursor: pointer;
+}
+
+.watch-movie__play-pay:hover {
+  background-image: url("images/play-pink.png");
+}
+
+.pay-movie {
+  background-color: #373837;
+}
+
+.pay-movie__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-pay__title,
+.movie-pay__creator {
+  color: white;
+}
+
+.movie-pay__title {
+  font-size: 2.6rem;
+}
+
+.movie-pay__creator {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.pay-information {
+  padding-top: 60px;
+}
+
+.movie-pay__line {
+  border: none;
+  border-top: 3px solid white;
+  width: 330px;
+  margin-bottom: 10px;
+}
+
+.movie-pay__year {
+  display: inline;
+  color: white;
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+.movie-pay__category {
+  display: inline;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+aside {
+  width: fit-content;
+  min-height: fit-content;
+  background-color: #373837;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.movie-pay__text {
+  color: white;
+  width: 90%;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.movie-pay__price {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+}
+
+.movie-pay__price > h5 {
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 /* SEARCH */
@@ -1894,6 +2019,10 @@ input[type="checkbox"] + label {
     position: absolute;
     left: 400px;
   }
+  .pay-information__div {
+    position: relative;
+    top: 0px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1994,7 +2123,26 @@ input[type="checkbox"] + label {
     position: absolute;
     left: 200px;
     padding: 40px;
-    margin-top: 28px;
+    margin-top: 30px;
+  }
+  .pay-movie__main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ".pay-movie", "aside";
+  }
+
+  .pay-movie {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  aside {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .pay-information__div {
+    position: relative;
+    top: -20px;
   }
 }
 
@@ -2079,252 +2227,285 @@ input[type="checkbox"] + label {
   input[type="text"] {
     width: 200px;
   }
-  .overlay-box__signin {
-    position: absolute;
-    left: 100px;
-    padding: 30px;
-    margin-top: -45px;
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  .nav-profile li,
-  .nav-profile .nav-link {
-    float: left;
-  }
-
-  .nav-profile .nav-link {
-    position: relative;
-    top: 22px;
-  }
-
-  .logo__wrap {
-    height: 50px;
-    width: 100vw;
-  }
-
-  header li {
-    position: relative;
-    right: 145px;
-    margin-right: 10px;
-  }
-
-  .nav-link {
-    display: inline;
-    position: relative;
-    right: 145px;
-    margin-right: 6px;
-  }
-
-  #signup-background {
-    display: none;
-  }
-
-  .container {
-    width: 100vw;
-    height: 150px;
-  }
-
-  .featured__headings h2 {
-    font-size: 2.5rem;
-  }
-  .featured__headings h1 {
-    font-size: 1.2rem;
-  }
-
-  .featured__headings h3 {
-    font-size: 1.3rem;
-  }
-
-  .new {
-    display: grid;
-    margin: 0px;
-    grid-template-areas:
-      "news"
-      "new-1"
-      "new-2"
-      "new-3"
-      "new-4";
-    row-gap: 15px;
-  }
-
-  .new {
-    display: grid;
-    margin: 0px;
-    grid-template-areas:
-      "news"
-      "new-1"
-      "new-2"
-      "new-3"
-      "new-4";
-    row-gap: 15px;
-  }
-
-  .new-titles {
-    width: 100vw;
-    height: 800px;
-  }
-
-  .presentation {
-    background: url("/images/presentation-background.jpg");
-  }
-
-  .new-titles-movie {
-    height: 1680px;
-  }
-
-  .pres {
-    width: 300px;
-    position: absolute;
-    right: 50px;
-  }
-
-  .pres > h2 {
-    font-size: 2.1rem;
-  }
-
-  .footer-group {
-    margin: 0px;
-  }
-
-  .icon-link {
-    margin-top: 20px;
-  }
-  .white-box {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .sign-up__back {
-    text-align: right;
-    margin-right: 90px;
-  }
-  .overlay-box__signup__bottom {
-    position: absolute;
-    left: 980px;
-    bottom: 100px;
-    padding: 40px;
-  }
   .overlay-box__signin {
     position: absolute;
     left: 40px;
     padding: 30px;
-    margin-top: -100px;
+    margin-top: 20px;
   }
 
-  .prod-profile {
-    margin-top: 130px;
-    grid-column: 1/5;
-    grid-row: 1/2;
-    border-radius: 50px 50px 10px 10px !important;
+  .overlay-box__signin legend {
+    font-size: 0.9rem;
   }
 
-  #upload {
+  .overlay-box__signin h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .form__signin .red__round {
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 170px;
+    height: 30px;
+    margin-bottom: 7px;
+  }
+
+  .pay-information__div {
     position: relative;
-    left: 165px;
-    top: 65px;
+    top: -90px;
   }
 
-  .prod-mymovies {
-    grid-column: 1/5;
-    grid-row: 2/3;
-    margin-top: 7px;
-  }
-  .prod-mylibrary {
-    grid-column: 1/5;
-    grid-row: 3/4;
-    margin-top: 7px;
+  .watch-movie__play-pay {
+    position: absolute;
+    top: 30%;
+    left: 30%;
   }
 
-  .prod-likedmovies {
-    grid-column: 1/5;
-    grid-row: 4/5;
-    margin-top: 10px;
-  }
-  .prod-discussion {
-    grid-column: 1/5;
-    grid-row: 5/6;
-    margin-top: 7px;
-  }
-  .settings {
-    grid-column: 1/5;
-    grid-row: 6/7;
-    margin-top: 7px;
-  }
+  @media only screen and (max-width: 600px) {
+    .nav-profile li,
+    .nav-profile .nav-link {
+      float: left;
+    }
 
-  #title-profile-2 {
-    top: 98px;
-  }
+    .nav-profile .nav-link {
+      position: relative;
+      top: 22px;
+    }
 
-  #creator-profile-2 {
-    top: 91px;
-  }
+    .logo__wrap {
+      height: 50px;
+      width: 100vw;
+    }
 
-  .view-profile {
-    grid-column: 1/5;
-    grid-row: 2/3;
-    border-radius: 50px 50px 10px 10px !important;
-  }
-  .view-mylibrary {
-    grid-column: 1/5;
-    grid-row: 3/4;
-    margin-top: 7px;
-  }
-  .view-likedmovies {
-    grid-column: 1/5;
-    grid-row: 4/5;
-    margin-top: 7px;
-  }
-  .view-discussion {
-    grid-column: 1/5;
-    grid-row: 5/6;
-    margin-top: 7px;
-  }
-  #title-profile__hunters-2 {
-    position: relative;
-    padding-left: 12px;
-    top: 86px;
-    color: white;
-    font-size: 1.3rem;
-    text-shadow: 0px 5px 15px #000000;
-    margin-bottom: 2px;
-  }
+    header li {
+      position: relative;
+      right: 145px;
+      margin-right: 10px;
+    }
 
-  #creator-profile__hunters-2 {
-    position: relative;
-    padding-left: 12px;
-    top: 87px;
-    color: white;
-    font-size: 0.8rem;
-    text-shadow: 0px 5px 15px #000000;
-  }
+    .nav-link {
+      display: inline;
+      position: relative;
+      right: 145px;
+      margin-right: 6px;
+    }
 
-  #heart__hunters {
-    position: relative;
-    top: -166px;
+    #signup-background {
+      display: none;
+    }
+
+    .container {
+      width: 100vw;
+      height: 150px;
+    }
+
+    .featured__headings h2 {
+      font-size: 2.5rem;
+    }
+    .featured__headings h1 {
+      font-size: 1.2rem;
+    }
+
+    .featured__headings h3 {
+      font-size: 1.3rem;
+    }
+
+    .new {
+      display: grid;
+      margin: 0px;
+      grid-template-areas:
+        "news"
+        "new-1"
+        "new-2"
+        "new-3"
+        "new-4";
+      row-gap: 15px;
+    }
+
+    .new {
+      display: grid;
+      margin: 0px;
+      grid-template-areas:
+        "news"
+        "new-1"
+        "new-2"
+        "new-3"
+        "new-4";
+      row-gap: 15px;
+    }
+
+    .new-titles {
+      width: 100vw;
+      height: 800px;
+    }
+
+    .presentation {
+      background: url("/images/presentation-background.jpg");
+    }
+
+    .new-titles-movie {
+      height: 1680px;
+    }
+
+    .pres {
+      width: 300px;
+      position: absolute;
+      right: 50px;
+    }
+
+    .pres > h2 {
+      font-size: 2.1rem;
+    }
+
+    .footer-group {
+      margin: 0px;
+    }
+
+    .icon-link {
+      margin-top: 20px;
+    }
+    .white-box {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .sign-up__back {
+      text-align: right;
+      margin-right: 90px;
+    }
+    .overlay-box__signup__bottom {
+      position: absolute;
+      left: 980px;
+      bottom: 100px;
+      padding: 40px;
+    }
+    .overlay-box__signin {
+      position: absolute;
+      left: 40px;
+      padding: 20px;
+      margin-top: 0px;
+    }
+
+    .overlay-box__signin legend {
+      font-size: 0.9rem;
+    }
+
+    .overlay-box__signin h1 {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .form__signin .red__round {
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 170px;
+      height: 30px;
+      margin-bottom: 7px;
+    }
+
+    /* profiles for mobile */
+
+    .prod-profile {
+      margin-top: 130px;
+      grid-column: 1/5;
+      grid-row: 1/2;
+      border-radius: 50px 50px 10px 10px !important;
+    }
+
+    #upload {
+      position: relative;
+      left: 165px;
+      top: 65px;
+    }
+
+    .prod-mymovies {
+      grid-column: 1/5;
+      grid-row: 2/3;
+      margin-top: 7px;
+    }
+    .prod-mylibrary {
+      grid-column: 1/5;
+      grid-row: 3/4;
+      margin-top: 7px;
+    }
+
+    .prod-likedmovies {
+      grid-column: 1/5;
+      grid-row: 4/5;
+      margin-top: 10px;
+    }
+    .prod-discussion {
+      grid-column: 1/5;
+      grid-row: 5/6;
+      margin-top: 7px;
+    }
+    .settings {
+      grid-column: 1/5;
+      grid-row: 6/7;
+      margin-top: 7px;
+    }
+
+    #title-profile-2 {
+      top: 98px;
+    }
+
+    #creator-profile-2 {
+      top: 91px;
+    }
+
+    .view-profile {
+      grid-column: 1/5;
+      grid-row: 2/3;
+      border-radius: 50px 50px 10px 10px !important;
+    }
+    .view-mylibrary {
+      grid-column: 1/5;
+      grid-row: 3/4;
+      margin-top: 7px;
+    }
+    .view-likedmovies {
+      grid-column: 1/5;
+      grid-row: 4/5;
+      margin-top: 7px;
+    }
+    .view-discussion {
+      grid-column: 1/5;
+      grid-row: 5/6;
+      margin-top: 7px;
+    }
+    #title-profile__hunters-2 {
+      position: relative;
+      padding-left: 12px;
+      top: 86px;
+      color: white;
+      font-size: 1.3rem;
+      text-shadow: 0px 5px 15px #000000;
+      margin-bottom: 2px;
+    }
+
+    #creator-profile__hunters-2 {
+      position: relative;
+      padding-left: 12px;
+      top: 87px;
+      color: white;
+      font-size: 0.8rem;
+      text-shadow: 0px 5px 15px #000000;
+    }
+
+    #heart__hunters {
+      position: relative;
+      top: -166px;
+    }
   }
 }
-
-/* .view-profile {
-  margin-top: 60px;
-  padding: 100px;
-  grid-column: 1/2;
-  border-radius: 50px 50px 10px 50px !important;
-}
-.view-mylibrary {
-  margin-top: 180px;
-  padding: 30px;
-  grid-column: 2/3;
-}
-
-.view-likedmovies {
-  margin-top: 180px;
-  padding: 30px;
-  grid-column: 3/4;
-}
-
-.view-discussion {
-  margin-top: 180px;
-  padding: 30px;
-  grid-column: 4/5;
-}
-*/
