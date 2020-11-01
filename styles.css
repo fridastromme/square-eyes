@@ -1024,7 +1024,7 @@ h5 {
 /* WATCH MOVIE PAGE */
 
 .watch-movie__body {
-  height: 100vh;
+  min-height: 60vh;
   background-color: #373837;
 }
 
@@ -2243,6 +2243,10 @@ input[type="checkbox"] + label {
   .container-movie h3 {
     position: relative;
     top: 160px;
+  }
+
+  .watch-movie {
+    padding: 100px 0;
   }
 
   .presentation {
