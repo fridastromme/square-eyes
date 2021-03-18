@@ -1851,169 +1851,70 @@ legend {
 
 /* SIGN UP FORMS */
 
-.sign-up__header {
-	background: transparent;
-	box-shadow: none;
-	margin-bottom: -90px;
+.contact-title {
+	text-align: center;
 }
 
-.sign-up__icon {
-	background-image: url('images/producer-chair.png');
-	background-repeat: no-repeat;
-	width: 100px;
-	height: 100px;
+.signup-form {
+	background-color: white;
+	width: 60%;
 	margin: auto;
-	margin-top: 20px;
+	padding: 1rem;
 }
 
-.sign-up__icon-2 {
-	background-image: url('images/viewer-glasses.png');
-	background-repeat: no-repeat;
-	width: 130px;
-	height: 100px;
-	margin: auto;
-	margin-top: 20px;
-}
-
-input[type='checkbox'] {
-	display: inline;
-}
-
-legend {
+label {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #373736;
+	font-weight: bolder;
 	font-size: 1.1rem;
 	margin-bottom: 3px;
 }
 
-.sign-up__back {
-	position: relative;
-	top: 22px;
-	max-width: 700px;
-	margin: auto;
-}
-
-#back {
-	text-decoration: none;
-
-	color: white;
-	font-weight: bold;
-}
-
-#back:hover {
-	text-decoration: none;
-	color: #373837;
-	font-weight: bold;
-}
-
-#createprod {
-	background-image: linear-gradient(#7b8576, #3141d4);
-	max-height: fit-content;
-	min-height: 100vh;
-}
-
-#createview {
-	background-image: linear-gradient(#ffa987, #ff5d1c);
-	max-height: fit-content;
-	min-height: 100vh;
-}
-
-#viewer-icon {
-	background-image: url('/images/icon-viewer-pink.png');
-	width: 100px;
-	height: 100px;
-	background-repeat: no-repeat;
-	margin: auto;
-}
-
-.white-box {
-	background-color: white;
-	max-width: 700px;
-	min-height: 650px;
-	filter: drop-shadow(0px 3px 10px #373737);
-	margin: auto;
-	margin-top: 30px;
-	padding-top: 20px;
-	padding: 10px 10px;
-	padding-bottom: 20px;
-	border-radius: 10px 50px 50px 50px;
-}
-
-#create {
-	margin-left: 270px;
-}
-
-.sign-up__text {
-	max-width: 367px;
-	margin: auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
-	text-align: left;
-}
-
-.sign-up__text > h1 {
-	font-size: 1.5rem;
-	margin-bottom: 5px;
-}
-
-.sign-up__input {
-	width: 100%;
-	margin: auto;
-}
-
-.sign-up__input > input {
-	background-color: #889fca;
-	width: 90%;
-}
-
-.sign-up__input > input:focus {
-	outline: none;
-	background-color: #aec5f2;
-}
-
-.sign-up__input-2 > input {
-	background-color: #fead8d;
-	width: 90%;
-}
-
-.sign-up__input-2 > input:focus {
-	outline: none;
-	background-color: #ffc3ac;
-}
-
-input[type='checkbox'] + label {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	margin-left: 5px;
-	color: #373837;
-}
-
-.sign-up__checkbox {
+input {
 	display: block;
+	margin-top: 0.5rem;
+	margin-bottom: 0.3rem;
+}
+
+.form-error {
+	display: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: tomato;
+	margin-bottom: 1rem;
+}
+
+.success {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
 	margin: auto;
-	min-width: 0;
-	width: 100%;
-	margin-bottom: 6px;
+	padding-bottom: 1rem;
 }
 
-#sign-up__terms {
-	color: #3141d4;
+.form-comment {
+	font-size: 0.8rem;
+	color: gray;
 }
 
-#sign-up__terms:hover {
-	color: #7984eb;
+button {
+	display: block;
+	border: 3px solid #ff5d1c;
+	background-color: #ff5d1c;
+	padding: 12px 38px;
+	color: white;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 0px 3px 10px #c4c4c4;
+	margin: auto;
+	margin-top: 25px;
 }
 
-#sign-up__terms-2 {
+button:hover {
+	border-color: #ff5d1c;
+	background-color: transparent;
 	color: #ff5d1c;
-}
-
-#sign-up__terms-2:hover {
-	color: #fc8b5e;
-}
-
-.sign-up__button {
-	width: 200px;
-	margin: auto;
-	margin-top: 30px;
 }
 
 /* MEDIA QUIERIES */

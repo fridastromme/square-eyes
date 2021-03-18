@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Square Eyes | Create viewer account</title>
-    <meta
-      name="description"
-      content="Create your viewer account and start watching today."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <header class="sign-up__header">
-    <a href="index.html"
-    ><img
-      src="images/logo-white.png"
-      class="logo"
-      alt="Website logo"
-  /></a>
-<!-- Hotjar Tracking Code for https://pedantic-kalam-be18d0.netlify.app/index.html -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2267781,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  </header>
-  <body id="createview"></body>
-<main>
-  <section>
-    <div class="sign-up__back">
-    <a href="index.html" id="back">Go back</a>
-    </div>
-    <div class="white-box">
-      <div class="form">
-        <div class="sign-up__icon-2"></div>
-        <div class="sign-up__text">
-        <h1>Create your viewer account</h1>
-        <p>
-          Discover new independently made films on a pay-per-view basis, and support young film makers. <a href="#" id="sign-up__terms-2">Learn more</a>
-        </p>
-        </div>
-        <fieldset>
-        <form action="submit.php" method="POST" class="sign-up__form">
-          <div class="sign-up__input-2">
-          <legend>Your email</legend>
-          <input type="email" name="email"/>
-          <legend>Your password</legend>
-          <input type="password" name="password"/>
-          <legend>Re-enter password</legend>
-          <input type="password" name="password-reenter"/>
-        </div>
-        <div class="sign-up__checkbox">
-        <input type="checkbox" name="recommendations" value="recommendations" id="recommendations"><label for="recommendations">Please send me news and recommendations via email.</label>
-        </div>
-        <div class="sign-up__checkbox">
-        <input type="checkbox" name="terms" value="terms" id="terms"><label for="terms">I agree to the <a href="#" id="sign-up__terms-2">terms of use</a>.</label>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create your viewer account</title>
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <header class="sign-up__header">
+        <a href="index.html"
+        ><img
+          src="images/logo-white.png"
+          class="logo"
+          alt="Website logo"
+      /></a>
+      </header>
+    <body id="createview">
+        <div class="white-box">
+            <div class="sign-up__back">
+                <a href="index.html" id="back">Go back</a>
+                </div>
+            <div class="sign-up__icon-2"></div>
+            <main class="signup-form">
+            <div class="sign-up__text">
+                <h1>Create your viewer account</h1>
+                <p>
+                  Discover new independently made films on a pay-per-view basis, and support young film makers. <a href="#" id="sign-up__terms-2">Learn more</a>
+                </p>
+                </div>
+            <div class="error-message"></div>
+                <div class="success"></div>
+
+        <div>
+           <label>
+           Your e-mail 
+        </label>
+           <p class="form-comment">Required</p>
+           <input name="email" type="email" id="email"/>
+           <div class="form-error" id="emailError">Please enter a valid email-address.</div>
         </div>
 
-      </div>
-    </fieldset>
-    <div class="sign-up__button">
-    <a class="btn red__round" href="viewer-profile.html">Sign up now</a></li>
-    </div>
-      </form>
-    </div>
-  </section>
-</main>
-</html>
+        <div>
+            <label>
+            Your password 
+            </label>
+            <p class="form-comment">Minimum 8 characters, at least one upper case letter and one number.</p>
+            <input name="password" type="password" id="password"/>
+            <div class="form-error" id="passwordError">Please enter a valid password.</div>
+        </div>
+
+        <div>
+            <label>
+            Re-enter your password 
+            </label>
+            <input name="password" type="password" id="password__reenter"/>
+            <div class="form-error" id="password__reenter-error">Please re-enter a matching password.</div>
+        </div>
+
+         <button id="submit">Sign up now</button>
+        </form>
+        </main>
+        <script src="js/signup.js"></script>
+    </body>
+    </html>
